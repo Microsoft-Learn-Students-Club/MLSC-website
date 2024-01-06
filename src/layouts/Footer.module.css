@@ -1,0 +1,42 @@
+.footer_section {
+    padding: 4em 4em 1em;
+    background-color: rgba(22, 21, 21, 0.95);
+    color: rgb(255, 255, 255);
+}
+
+.footer_content {
+    justify-content: space-between;
+    padding-bottom: 3em;
+}
+
+.footer_logo img {
+    width: 11.5rem;
+    height: 10rem;
+}
+
+.socialmedia {
+    gap: 1.5rem;
+}
+
+.social_icon {
+    font-size: x-large;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.social_icon:hover {
+    color: rgb(55, 55, 204);
+}
+
+.footer_below {
+    border-top: 1.5px solid rgb(255, 255, 255);
+}
+
+.footer_copyright {
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.footer_copyright p {
+    font-weight: 500;
+}

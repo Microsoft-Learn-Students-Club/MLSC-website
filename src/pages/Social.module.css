@@ -1,0 +1,34 @@
+.socials{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    text-decoration-color: white;
+}
+#icon{
+    width: 50px;
+    height: 50px;
+    color: white;
+    transition: 0.5s;
+}
+
+#social_name{
+    text-decoration-color: white;
+    font-size: 25px;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    background-color: black;
+    text-decoration-color: white;
+}
