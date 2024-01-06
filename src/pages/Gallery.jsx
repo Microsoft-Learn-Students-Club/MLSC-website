@@ -1,12 +1,14 @@
-import * as React from 'react';
+import Fancybox from '../components/Fancybox';
 import styles from './Gallery.module.css';
 
-import Fancybox from './Fancybox';
+const imageBaseURL = 'https://lipsum.app/id/';
 
 export default function App() {
+    const imageIds = [60, 61, 62, 63, 64];
+
     return (
         <div className={styles.container}>
-            <h1 style={{ color: "#ffffff" }}>Image Gallery</h1>
+            <h1 className={`title | ${styles.gallery_title}`}>Image Gallery</h1>
             <Fancybox
                 options={{
                     Carousel: {
@@ -15,86 +17,34 @@ export default function App() {
                 }}
             >
                 <div className={styles.image_container}>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/60/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/60/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/61/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/61/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/62/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/63/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/64/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/64/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/60/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/60/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/61/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/61/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/62/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/63/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
-                    <a className={styles.image} data-fancybox="gallery" href="https://lipsum.app/id/64/1600x1200">
-                        <img
-                            alt=""
-                            src="https://lipsum.app/id/64/200x150"
-                            width="200"
-                            height="150"
-                        />
-                    </a>
+                    {imageIds.map((id) => (
+                        <>
+                            <a
+                                key={id}
+                                className={styles.image}
+                                data-fancybox="gallery"
+                                href={`${imageBaseURL}${id}/1600x1200`}
+                            >
+                                <img
+                                    src={`${imageBaseURL}${id}/200x150`}
+                                    width="200"
+                                    height="150"
+                                />
+                            </a>
+                            <a
+                                key={id}
+                                className={styles.image}
+                                data-fancybox="gallery"
+                                href={`${imageBaseURL}${id}/1600x1200`}
+                            >
+                                <img
+                                    src={`${imageBaseURL}${id}/200x150`}
+                                    width="200"
+                                    height="150"
+                                />
+                            </a>
+                        </>
+                    ))}
                 </div>
             </Fancybox>
         </div>

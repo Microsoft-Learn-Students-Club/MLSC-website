@@ -1,4 +1,3 @@
-import Footer from "../layouts/Footer"
 import aboutImg from '../assets/about.webp';
 import styles from './About.module.css';
 
@@ -14,7 +13,6 @@ const About = () => {
           <img src={aboutImg} alt='aboutImg' className={styles.aboutImg} />
         </div>
       </section>
-      {/* <Footer /> */}
     </>
   )
 }

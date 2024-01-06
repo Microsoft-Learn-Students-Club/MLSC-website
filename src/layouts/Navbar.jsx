@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* <ul className={styles.nav_link_container} style={{ color: aboutClr }}> */}
           <ul className={styles.nav_link_container}>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><Link to="/">Home</Link></li>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/about">About</NavLink></li>
+            {/* <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/about">About</NavLink></li> */}
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/team">Team</NavLink></li>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/events">Works</NavLink></li>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/leaderboard">Leaderboard</NavLink></li>

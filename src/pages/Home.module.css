@@ -18,7 +18,7 @@
     flex-direction: column;
     gap: .5rem;
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 10%;
 }
 
@@ -39,17 +39,17 @@ h1>span {
     color: rgb(255, 255, 255);
 }
 
+/* 
 .btn_container {
     display: flex;
-}
-
+} */
+/* 
 .btn {
     border-radius: 2rem;
     border: none;
     padding: .5em 2em;
     background-color: rgb(35, 65, 240);
     color: rgb(255, 255, 255);
-    /* font-weight: 600; */
     font-size: 16px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -64,4 +64,4 @@ h1>span {
     margin-left: 0.4rem;
     font-size: 20px;
     font-weight: 900;
-}
+} */
