@@ -29,6 +29,10 @@ img {
     object-fit: cover;
 }
 
+.active {
+    color: rgb(2, 162, 255);
+}
+
 .section {
     padding: 0 3em;
 }
