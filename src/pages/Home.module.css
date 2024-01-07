@@ -1,0 +1,87 @@
+.home_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(25, 15, 41);
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.hero_title h1 {
+    font-size: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+h1>span {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(299deg, rgb(65, 105, 225), rgb(56, 66, 255), rgb(26, 67, 191), rgb(0, 255, 249));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: animate-gradient 3s ease-in-out alternate infinite;
+}
+
+.hero_title p {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+/* 
+.btn_container {
+    display: flex;
+} */
+/* 
+.btn {
+    border-radius: 2rem;
+    border: none;
+    padding: .5em 2em;
+    background-color: rgb(35, 65, 240);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 65, 240) ;
+}
+
+.btn span {
+    margin-left: 0.4rem;
+    font-size: 20px;
+    font-weight: 900;
+} */
+
+@keyframes animate-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

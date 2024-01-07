@@ -1,0 +1,65 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 2em;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid rgba(248, 250, 252, 0.059);
+}
+
+.navbar_bg {
+    background-color: rgba(87, 89, 90, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.nav_wrapper {
+    justify-content: space-between;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    gap: .5rem;
+}
+
+.logo>.mlsc_logo {
+    height: 2rem;
+    width: 2rem;
+}
+
+.logo span {
+    color: rgb(35, 65, 240);
+}
+
+.nav_link_container {
+    display: flex;
+    gap: 4rem;
+    color: rgb(255, 255, 255)
+}
+
+.nav_link {
+    position: relative;
+}
+
+.nav_link a:hover {
+    color: rgb(2, 162, 255);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.nav_link::before {
+    transition: 300ms;
+    height: 1.5px;
+    content: "";
+    position: absolute;
+    background-color: rgb(2, 162, 255);
+}
+
+.nav_link_ltr::before {
+    width: 0%;
+    bottom: -5px;
+}
+
+.nav_link_ltr:hover::before {
+    width: 100%;
+}
