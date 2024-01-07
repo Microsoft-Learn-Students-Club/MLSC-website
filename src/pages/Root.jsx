@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../layouts/Navbar";
 import { useEffect } from "react";
 import mlscLogo from '../assets/mlsclogo.png';
+import ScrollToTop from "../components/ScrollToTop";
 
 const Root = () => {
 
@@ -24,13 +25,14 @@ const Root = () => {
 
     return (
         <>
+            <ScrollToTop />
             <Navbar />
             <Outlet />
             <section>
                 <div id="preloader">
                     <div id="ctn-preloader" className="ctn-preloader">
                         <div className="animation-preloader">
-                            <img src={mlscLogo} alt="mlsc logo" className="fadeInOut"/>
+                            <img src={mlscLogo} alt="mlsc logo" className="fadeInOut" />
                             <div className="txt-loading">
                                 <span data-text-preloader="M" className="letters-loading">
                                     M
