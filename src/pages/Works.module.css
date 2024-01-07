@@ -24,3 +24,7 @@
     background-color: rgb(255, 255, 255);
     color: rgb(35, 65, 240);
 }
+
+.footer_container {
+    margin-top: 4rem;
+}
