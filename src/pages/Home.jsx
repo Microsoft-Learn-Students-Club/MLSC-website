@@ -3,7 +3,6 @@ import Footer from "../layouts/Footer"
 import globe from 'vanta/src/vanta.globe'
 import styles from './Home.module.css'
 import About from './About'
-// import Socials from './Socials'
 import Gallery from './Gallery'
 
 const Home = () => {
@@ -32,12 +31,8 @@ const Home = () => {
             <h1>MLSC <span>VCET</span></h1>
             <p>for the love of coding and innovation</p>
           </div>
-          {/* <div className={styles.btn_container}>
-            <a href='#about' className={styles.btn}>About us<span>↗</span></a>
-          </div> */}
         </div>
       </div>
-      {/* <Socials /> */}
       <About />
       <Gallery/>
       <Footer />

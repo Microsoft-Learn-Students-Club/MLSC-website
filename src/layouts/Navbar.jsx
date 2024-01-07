@@ -31,7 +31,7 @@ const Navbar = () => {
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><Link to="/">Home</Link></li>
             {/* <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/about">About</NavLink></li> */}
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/team">Team</NavLink></li>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/events">Works</NavLink></li>
+            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/works">Works</NavLink></li>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/leaderboard">Leaderboard</NavLink></li>
           </ul>
         </div>

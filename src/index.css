@@ -195,29 +195,6 @@ img {
     }
 }
 
-@media screen and (max-width: 767px) {
-
-    .ctn-preloader .animation-preloader .fadeInOut {
-        height: 8em;
-        width: 8em;
-    }
-
-    .ctn-preloader .animation-preloader .txt-loading {
-        font: bold 3.5em 'Montserrat', sans-serif;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .ctn-preloader .animation-preloader .fadeInOut {
-        height: 7em;
-        width: 7em;
-    }
-
-    .ctn-preloader .animation-preloader .txt-loading {
-        font: bold 2em 'Montserrat', sans-serif;
-    }
-}
-
 /* CUSTOM-SCROLLBAR */
 
 ::-webkit-scrollbar {

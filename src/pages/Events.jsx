@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Modal from "../layouts/Modal";
-import Project from "./Project";
 import workshopEventImg from "../assets/reactjsworkshop.jpeg";
 import azureEventImg from "../assets/azurechallenge.jpeg";
 import styles from './Events.module.css';
@@ -60,7 +59,6 @@ const Events = () => {
 
       </section>
       {isModalOpen && <Modal event={selectedEvent} onRequestClose={() => setModalIsOpen(false)} />}
-      <Project />
     </>
   );
 };

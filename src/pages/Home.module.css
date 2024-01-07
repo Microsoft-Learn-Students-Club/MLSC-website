@@ -30,7 +30,13 @@
 }
 
 h1>span {
-    color: rgb(35, 65, 240);
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(299deg, rgb(65, 105, 225), rgb(56, 66, 255), rgb(26, 67, 191), rgb(0, 255, 249));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: animate-gradient 3s ease-in-out alternate infinite;
 }
 
 .hero_title p {
@@ -65,3 +71,17 @@ h1>span {
     font-size: 20px;
     font-weight: 900;
 } */
+
+@keyframes animate-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
