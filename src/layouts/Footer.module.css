@@ -9,6 +9,11 @@
     padding-bottom: 3em;
 }
 
+.contacts{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .footer_logo img {
     width: 11.5rem;
     height: 10rem;
