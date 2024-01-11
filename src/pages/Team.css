@@ -773,8 +773,8 @@ video {
 }
 
 .text-lg {
-    font-size: 1.5rem;
-    line-height: 1.75rem
+    font-size: 1.3rem;
+    line-height: 1.70rem
 }
 
 .text-sm {
@@ -1115,7 +1115,7 @@ video {
     }
 
     .lg\:text-3xl {
-        font-size: 2.70rem;
+        font-size: 2.1rem;
         line-height: 2.25rem
     }
 
