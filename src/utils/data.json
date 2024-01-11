@@ -60,31 +60,10 @@
 
   "corporate": [
     {
-      "name": "Vinaya Tiwari",
-      "imgSrc": "https://i.imgur.com/Vo85ZTC.jpeg",
-      "githubUrl": "https://github.com/ItszVT",
-      "linkedinUrl": "https://www.linkedin.com/in/vinaya-tiwari-652a0322a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "role": "Corporate Associate"
-    },
-    {
-      "name": "Sajid Kasari",
-      "imgSrc": "https://i.imgur.com/t5kzUTI.jpeg",
-      "githubUrl": "https://github.com/sajidkassari?tab=overview&from=2021-12-01&to=2021-12-31",
-      "linkedinUrl": "https://www.linkedin.com/in/sajidkassari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "role": "Corporate Associate"
-    },
-    {
       "name": "Harshi Shah",
       "imgSrc": "https://i.imgur.com/dYAJLaC.jpeg",
       "githubUrl": "https://github.com/Shahharshii",
       "linkedinUrl": "https://www.linkedin.com/in/harshi-shah-27april?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "role": "Corporate Associate"
-    },
-    {
-      "name": "Tej More",
-      "imgSrc": "https://i.imgur.com/0nVax2f.jpeg",
-      "githubUrl": "https://github.com/Tej0608",
-      "linkedinUrl": "https://www.linkedin.com/in/tej-more-267085237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "role": "Corporate Associate"
     },
     {
@@ -95,17 +74,38 @@
       "role": "Corporate Associate"
     },
     {
-      "name": "Shagun Upadhyay",
-      "imgSrc": "https://i.imgur.com/heqciBA.jpeg",
-      "githubUrl": "https://github.com/shagunupadhyay15",
-      "linkedinUrl": "https://www.linkedin.com/in/shagun-upadhyay-459a4525b",
-      "role": "Corporate Coordinator"
+      "name": "Sajid Kasari",
+      "imgSrc": "https://i.imgur.com/t5kzUTI.jpeg",
+      "githubUrl": "https://github.com/sajidkassari?tab=overview&from=2021-12-01&to=2021-12-31",
+      "linkedinUrl": "https://www.linkedin.com/in/sajidkassari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "role": "Corporate Associate"
+    },
+    {
+      "name": "Tej More",
+      "imgSrc": "https://i.imgur.com/0nVax2f.jpeg",
+      "githubUrl": "https://github.com/Tej0608",
+      "linkedinUrl": "https://www.linkedin.com/in/tej-more-267085237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "role": "Corporate Associate"
+    },
+    {
+      "name": "Vinaya Tiwari",
+      "imgSrc": "https://i.imgur.com/Vo85ZTC.jpeg",
+      "githubUrl": "https://github.com/ItszVT",
+      "linkedinUrl": "https://www.linkedin.com/in/vinaya-tiwari-652a0322a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "role": "Corporate Associate"
     },
     {
       "name": "Jayesh Solminden",
       "imgSrc": "https://i.imgur.com/3MNeM6y.jpeg",
       "githubUrl": "https://github.com/JAYESH-SOLMINDE",
       "linkedinUrl": "https://www.linkedin.com/in/jayesh-solminde-237120264/",
+      "role": "Corporate Coordinator"
+    },
+    {
+      "name": "Pranali Rane",
+      "imgSrc": "https://i.imgur.com/VkkC1kZ.jpeg",
+      "githubUrl": "https://github.com/pr136?tab=repositories",
+      "linkedinUrl": "www.linkedin.com/in/pranali-rane-56266",
       "role": "Corporate Coordinator"
     },
     {
@@ -116,10 +116,10 @@
       "role": "Corporate Coordinator"
     },
     {
-      "name": "Pranali Rane",
-      "imgSrc": "https://i.imgur.com/VkkC1kZ.jpeg",
-      "githubUrl": "https://github.com/pr136?tab=repositories",
-      "linkedinUrl": "www.linkedin.com/in/pranali-rane-56266",
+      "name": "Shagun Upadhyay",
+      "imgSrc": "https://i.imgur.com/heqciBA.jpeg",
+      "githubUrl": "https://github.com/shagunupadhyay15",
+      "linkedinUrl": "https://www.linkedin.com/in/shagun-upadhyay-459a4525b",
       "role": "Corporate Coordinator"
     },
     {
@@ -132,6 +132,13 @@
   ],
 
   "App": [
+    {
+      "name": "Mahek Mulla",
+      "imgSrc": "https://i.imgur.com/XoZWGAM.jpeg",
+      "githubUrl": "https://github.com/mash786",
+      "linkedinUrl": "https://www.linkedin.com/in/mahek-mulla-655372280",
+      "role": "Dev Associate"
+    },
     {
       "name": "Shubham Waghmare",
       "imgSrc": "https://i.imgur.com/oEktsb1.jpeg",
@@ -147,24 +154,17 @@
       "role": "Dev Associate"
     },
     {
-      "name": "Mahek Mulla",
-      "imgSrc": "https://i.imgur.com/XoZWGAM.jpeg",
-      "githubUrl": "https://github.com/mash786",
-      "linkedinUrl": "https://www.linkedin.com/in/mahek-mulla-655372280",
-      "role": "Dev Associate"
+      "name": "Gaurav Desale",
+      "imgSrc": "https://i.imgur.com/5zy24KG.jpeg",
+      "githubUrl": "https://github.com/GauravDesale08",
+      "linkedinUrl": "https://www.linkedin.com/in/gaurav-desale-84885b250/",
+      "role": "Dev Coordinator"
     },
     {
       "name": "Kumud Zimal",
       "imgSrc": "https://i.imgur.com/bUPhpIS.jpeg",
       "githubUrl": "https://github.com/KUMUDZIMAL",
       "linkedinUrl": "https://www.linkedin.com/in/kumud-zimal-b1579b261/",
-      "role": "Dev Coordinator"
-    },
-    {
-      "name": "Gaurav Desale",
-      "imgSrc": "https://i.imgur.com/5zy24KG.jpeg",
-      "githubUrl": "https://github.com/GauravDesale08",
-      "linkedinUrl": "https://www.linkedin.com/in/gaurav-desale-84885b250/",
       "role": "Dev Coordinator"
     },
     {
@@ -193,17 +193,17 @@
 
   "ML": [
     {
-      "name": "Dhrub Das",
-      "imgSrc": "https://i.imgur.com/uuBFLT6.jpeg",
-      "githubUrl": "https://github.com/ddas2707",
-      "linkedinUrl": "https://www.linkedin.com/in/dhrub-das-877659248",
-      "role": "Dev Associate"
-    },
-    {
       "name": "Kunal Chaudhari",
       "imgSrc": "https://i.imgur.com/u1F6rWh.jpeg",
       "githubUrl": "https://github.com/kc-codes",
       "linkedinUrl": "https://www.linkedin.com/in/kunal23",
+      "role": "Dev Associate"
+    },
+    {
+      "name": "Dhrub Das",
+      "imgSrc": "https://i.imgur.com/uuBFLT6.jpeg",
+      "githubUrl": "https://github.com/ddas2707",
+      "linkedinUrl": "https://www.linkedin.com/in/dhrub-das-877659248",
       "role": "Dev Associate"
     },
     {
@@ -213,26 +213,11 @@
       "linkedinUrl": "https://www.linkedin.com/in/sakshi-karande-b77a93230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "role": "Dev Associate"
     },
-
-    {
-      "name": "Yash Mohadikar",
-      "imgSrc": "https://i.imgur.com/BOukBtY.jpeg",
-      "githubUrl": "https://github.com/Yash222153107",
-      "linkedinUrl": "https://www.linkedin.com/in/yash-mohadikar-79136825b/",
-      "role": "Dev Coordinator"
-    },
     {
       "name": "Ayush Dahiwale",
       "imgSrc": "https://i.imgur.com/7ybfqnk.jpeg",
       "githubUrl": "https://github.com/AyushD95",
       "linkedinUrl": "https://www.linkedin.com/in/ayushdahiwale",
-      "role": "Dev Coordinator"
-    },
-    {
-      "name": "Ayush Mayekar",
-      "imgSrc": "https://i.imgur.com/GxfUqBr.jpeg",
-      "githubUrl": "https://github.com/AyushMayekar",
-      "linkedinUrl": "https://www.linkedin.com/in/ayush-mayekar-b9b883284/",
       "role": "Dev Coordinator"
     },
     {
@@ -243,10 +228,10 @@
       "role": "Dev Coordinator"
     },
     {
-      "name": "Yash Mayekar",
-      "imgSrc": "https://i.imgur.com/ZMp6ZGY.jpeg",
-      "githubUrl": "https://github.com/YashMayekar",
-      "linkedinUrl": "https://www.linkedin.com/in/yash-mayekar-87806024b/",
+      "name": "Ayush Mayekar",
+      "imgSrc": "https://i.imgur.com/GxfUqBr.jpeg",
+      "githubUrl": "https://github.com/AyushMayekar",
+      "linkedinUrl": "https://www.linkedin.com/in/ayush-mayekar-b9b883284/",
       "role": "Dev Coordinator"
     },
     {
@@ -262,6 +247,20 @@
       "githubUrl": "https://github.com/Jayvin21",
       "linkedinUrl": "https://www.linkedin.com/in/jayvin-parmar-7ab344295/",
       "role": "Dev Coordinator"
+    },
+    {
+      "name": "Yash Mayekar",
+      "imgSrc": "https://i.imgur.com/ZMp6ZGY.jpeg",
+      "githubUrl": "https://github.com/YashMayekar",
+      "linkedinUrl": "https://www.linkedin.com/in/yash-mayekar-87806024b/",
+      "role": "Dev Coordinator"
+    },
+    {
+      "name": "Yash Mohadikar",
+      "imgSrc": "https://i.imgur.com/BOukBtY.jpeg",
+      "githubUrl": "https://github.com/Yash222153107",
+      "linkedinUrl": "https://www.linkedin.com/in/yash-mohadikar-79136825b/",
+      "role": "Dev Coordinator"
     }
   ],
 
@@ -274,24 +273,24 @@
       "role": "Dev Associate"
     },
     {
-      "name": "Mukesh Billa",
-      "imgSrc": "https://i.imgur.com/N0BQXb2.jpeg",
-      "githubUrl": "https://github.com/bmukesh23",
-      "linkedinUrl": "https://www.linkedin.com/in/mukesh-billa-7bb41522b/",
+      "name": "Karan Gandhi",
+      "imgSrc": "https://i.imgur.com/smEgl0K.jpeg",
+      "githubUrl": "https://github.com/karan-2906",
+      "linkedinUrl": "https://www.linkedin.com/in/karan-gandhi-15082222a/",
       "role": "Dev Associate"
     },
     {
       "name": "Manav Lade",
-      "imgSrc": "https://i.imgur.com/hT2r1Hb.jpeg   ",
+      "imgSrc": "https://i.imgur.com/hT2r1Hb.jpeg",
       "githubUrl": "https://github.com/manavlade",
       "linkedinUrl": "https://www.linkedin.com/in/manav-lade/",
       "role": "Dev Associate"
     },
     {
-      "name": "Karan Gandhi",
-      "imgSrc": "https://i.imgur.com/smEgl0K.jpeg",
-      "githubUrl": "https://github.com/karan-2906",
-      "linkedinUrl": "https://www.linkedin.com/in/karan-gandhi-15082222a/",
+      "name": "Mukesh Billa",
+      "imgSrc": "https://i.imgur.com/N0BQXb2.jpeg",
+      "githubUrl": "https://github.com/bmukesh23",
+      "linkedinUrl": "https://www.linkedin.com/in/mukesh-billa-7bb41522b/",
       "role": "Dev Associate"
     },
     {
@@ -302,13 +301,6 @@
       "role": "Dev Coordinator"
     },
     {
-      "name": "Sridhar Pillai",
-      "imgSrc": "https://i.imgur.com/piUxW9F.jpeg",
-      "githubUrl": "https://github.com/Sridhar1030",
-      "linkedinUrl": "https://www.linkedin.com/in/sridhar-pillai-552292211/",
-      "role": "Dev Coordinator"
-    },
-    {
       "name": "Krisha Chikka",
       "imgSrc": "https://i.imgur.com/4d5rHrs.jpeg",
       "githubUrl": "https://github.com/krishachikka",
@@ -316,10 +308,10 @@
       "role": "Dev Coordinator"
     },
     {
-      "name": "Yash Chavan",
-      "imgSrc": "https://i.imgur.com/BKaaNCK.jpeg",
-      "githubUrl": "https://github.com/YashChavanWeb",
-      "linkedinUrl": "https://www.linkedin.com/in/yash-chavan-5b91a426b/",
+      "name": "Sridhar Pillai",
+      "imgSrc": "https://i.imgur.com/piUxW9F.jpeg",
+      "githubUrl": "https://github.com/Sridhar1030",
+      "linkedinUrl": "https://www.linkedin.com/in/sridhar-pillai-552292211/",
       "role": "Dev Coordinator"
     },
     {
@@ -328,17 +320,17 @@
       "githubUrl": "https://github.com/vedant2943",
       "linkedinUrl": "https://www.linkedin.com/in/vedant-jagdale-5234ab260/",
       "role": "Dev Coordinator"
+    },
+    {
+      "name": "Yash Chavan",
+      "imgSrc": "https://i.imgur.com/BKaaNCK.jpeg",
+      "githubUrl": "https://github.com/YashChavanWeb",
+      "linkedinUrl": "https://www.linkedin.com/in/yash-chavan-5b91a426b/",
+      "role": "Dev Coordinator"
     }
   ],
 
   "Outreach": [
-    {
-      "name": "Isha Kshatriya",
-      "imgSrc": "https://i.imgur.com/XwHaWFc.png",
-      "githubUrl": "https://github.com/Ishakshatriya21",
-      "linkedinUrl": "https://www.linkedin.com/in/isha-kshatriya-8b021a231",
-      "role": "Outreach Associate"
-    },
     {
       "name": "Mittrav Shah",
       "imgSrc": "https://i.imgur.com/SX7trSp.jpeg",
@@ -347,24 +339,17 @@
       "role": "Outreach Associate"
     },
     {
-      "name": "Vinith Shetty",
-      "imgSrc": "https://i.imgur.com/Q6esmWf.jpeg",
-      "githubUrl": "https://github.com/VinithShetty",
-      "linkedinUrl": "https://www.linkedin.com/in/vinith-shetty-451a99250/",
-      "role": "Outreach Coordinator"
+      "name": "Isha Kshatriya",
+      "imgSrc": "https://i.imgur.com/XwHaWFc.png",
+      "githubUrl": "https://github.com/Ishakshatriya21",
+      "linkedinUrl": "https://www.linkedin.com/in/isha-kshatriya-8b021a231",
+      "role": "Outreach Associate"
     },
     {
-      "name": "Pranav Shetty",
-      "imgSrc": "https://i.imgur.com/9t4vqcw.jpeg",
-      "githubUrl": "https://github.com/pranavshetty0704",
-      "linkedinUrl": "https://www.linkedin.com/in/pranav-shetty-0704pss04",
-      "role": "Outreach Coordinator"
-    },
-    {
-      "name": "Rithesh Shetty",
-      "imgSrc": "https://i.imgur.com/6E050H8.jpeg",
-      "githubUrl": "https://github.com/rithesh24",
-      "linkedinUrl": "https://www.linkedin.com/in/rithesh-shetty-6126b3294",
+      "name": "Aakanksha",
+      "imgSrc": "https://i.imgur.com/jCJvjwG.jpeg",
+      "githubUrl": "-",
+      "linkedinUrl": "https://www.linkedin.com/in/aakanksha-c-b8a216257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "role": "Outreach Coordinator"
     },
     {
@@ -382,6 +367,13 @@
       "role": "Outreach Coordinator"
     },
     {
+      "name": "Pranav Shetty",
+      "imgSrc": "https://i.imgur.com/9t4vqcw.jpeg",
+      "githubUrl": "https://github.com/pranavshetty0704",
+      "linkedinUrl": "https://www.linkedin.com/in/pranav-shetty-0704pss04",
+      "role": "Outreach Coordinator"
+    },
+    {
       "name": "Prathamesh Gawade",
       "imgSrc": "https://i.imgur.com/vHJjNiN.png",
       "githubUrl": "https://github.com/prathamesh090",
@@ -389,10 +381,17 @@
       "role": "Outreach Coordinator"
     },
     {
-      "name": "Aakanksha",
-      "imgSrc": "https://i.imgur.com/jCJvjwG.jpeg",
-      "githubUrl": "-",
-      "linkedinUrl": "https://www.linkedin.com/in/aakanksha-c-b8a216257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "name": "Rithesh Shetty",
+      "imgSrc": "https://i.imgur.com/6E050H8.jpeg",
+      "githubUrl": "https://github.com/rithesh24",
+      "linkedinUrl": "https://www.linkedin.com/in/rithesh-shetty-6126b3294",
+      "role": "Outreach Coordinator"
+    },
+    {
+      "name": "Vinith Shetty",
+      "imgSrc": "https://i.imgur.com/Q6esmWf.jpeg",
+      "githubUrl": "https://github.com/VinithShetty",
+      "linkedinUrl": "https://www.linkedin.com/in/vinith-shetty-451a99250/",
       "role": "Outreach Coordinator"
     },
     {
