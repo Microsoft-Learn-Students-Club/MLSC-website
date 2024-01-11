@@ -30,7 +30,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
             <img
               width="98"
               height="98"
-              src="https://img.icons8.com/ios-filled/98/github.png"
+              src="https://img.icons8.com/material-outlined/24/github.png"
               alt="github"
             />
           </a>
@@ -42,7 +42,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
             <img
               width="100"
               height="100"
-              src="https://img.icons8.com/3d-fluency/94/linkedin.png"
+              src="https://img.icons8.com/ios-filled/50/linkedin.png"
               alt="linkedin"
             />
           </a>
