@@ -6,6 +6,11 @@ import { useState } from "react";
 
 const Team = () => {
   const [selectedSection, setSelectedSection] = useState(null);
+  const [showAppDropdown, setShowAppDropdown] = useState(false);
+
+  const toggleAppDropdown = () => {
+    setShowAppDropdown(!showAppDropdown);
+  };
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -15,17 +20,73 @@ const Team = () => {
     }
   };
 
+  const renderDropdownOptions = () => {
+    if (showAppDropdown) {
+      return (
+        <div className="dropdown-options">
+          <p
+            className={`w-fit pointer-events-auto dropdown-option dropdown-heading ${
+              selectedSection === "App"
+                ? "text-pastel_red"
+                : "text-grey hover:text-pastel_red"
+            } cursor-pointer text-lg lg:text-xl`}
+            onClick={() => scrollToSection("App")}
+            style={{ marginLeft: "1em" }}
+          >
+            •{" "}
+            <span className={selectedSection === "App" ? "underline" : ""}>
+              App
+            </span>
+          </p>
+
+          <p
+            className={`w-fit pointer-events-auto dropdown-option ${
+              selectedSection === "ML"
+                ? "text-pastel_blue"
+                : "text-grey hover:text-pastel_blue"
+            } cursor-pointer text-lg lg:text-xl`}
+            onClick={() => scrollToSection("ML")}
+            style={{ marginLeft: "1em" }}
+          >
+            •{" "}
+            <span className={selectedSection === "ML" ? "underline" : ""}>
+              ML
+            </span>
+          </p>
+
+          <p
+            className={`w-fit pointer-events-auto dropdown-option ${
+              selectedSection === "Web"
+                ? "text-yellow"
+                : "text-grey hover:text-yellow"
+            } cursor-pointer text-lg lg:text-xl`}
+            onClick={() => scrollToSection("Web")}
+            style={{ marginLeft: "1em" }}
+          >
+            •{" "}
+            <span className={selectedSection === "Web" ? "underline" : ""}>
+              Web
+            </span>
+          </p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   const renderCards = (section) => {
-    return teamData[section].map((member, index) => (
-      <Card
-        key={index}
-        name={member.name}
-        imgSrc={member.imgSrc}
-        githubUrl={member.githubUrl}
-        linkedinUrl={member.linkedinUrl}
-        role={member.role}
-      />
-    ));
+    return (
+      teamData[section]?.map((member, index) => (
+        <Card
+          key={index}
+          name={member.name}
+          imgSrc={member.imgSrc}
+          githubUrl={member.githubUrl}
+          linkedinUrl={member.linkedinUrl}
+          role={member.role}
+        />
+      )) || []
+    );
   };
 
   return (
@@ -50,7 +111,7 @@ const Team = () => {
             gradients loving designers, and machine-like working managers.
           </p>
           <div className="flex flex-col gap-2 mt-8 w-fit">
-            <p
+            <div
               className={`w-fit pointer-events-auto ${
                 selectedSection === "LEADS"
                   ? "underline text-yellow"
@@ -59,7 +120,7 @@ const Team = () => {
               onClick={() => scrollToSection("LEADS")}
             >
               LEADS
-            </p>
+            </div>
             <p
               className={`w-fit pointer-events-auto ${
                 selectedSection === "Corporate"
@@ -70,38 +131,22 @@ const Team = () => {
             >
               Corporate
             </p>
-
-            <p
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "App"
-                  ? "underline text-pastel_red"
-                  : "text-grey hover:text-pastel_red"
-              } cursor-pointer text-lg lg:text-xl`}
-              onClick={() => scrollToSection("App")}
-            >
-              App
-            </p>
-            <p
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "ML"
-                  ? "underline text-pastel_blue"
-                  : "text-grey hover:text-pastel_blue"
-              } cursor-pointer text-lg lg:text-xl`}
-              onClick={() => scrollToSection("ML")}
-            >
-              ML
-            </p>
-            <p
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "Web"
-                  ? "underline text-yellow"
-                  : "text-grey hover:text-yellow"
-              } cursor-pointer text-lg lg:text-xl`}
-              onClick={() => scrollToSection("Web")}
-            >
-              Web
-            </p>
-            <p
+            <div className="relative inline-block">
+              <div
+                className={`w-fit pointer-events-auto ${
+                  selectedSection === "App"
+                    ? "underline text-pastel_red"
+                    : "text-grey hover:text-pastel_red"
+                } cursor-pointer text-lg lg:text-xl`}
+                onClick={() => {
+                  toggleAppDropdown();
+                }}
+              >
+                Dev
+              </div>
+              {renderDropdownOptions()}
+            </div>
+            <div
               className={`w-fit pointer-events-auto ${
                 selectedSection === "Outreach"
                   ? "underline text-pastel_green"
@@ -110,7 +155,7 @@ const Team = () => {
               onClick={() => scrollToSection("Outreach")}
             >
               Outreach
-            </p>
+            </div>
           </div>
         </div>
         <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
