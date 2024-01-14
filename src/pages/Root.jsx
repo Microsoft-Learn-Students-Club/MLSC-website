@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../layouts/Navbar";
 import { useEffect } from "react";
 import ScrollToTop from "../components/ScrollToTop";
-import Loading from "../components/loading";
+import bgvideo from "../assets/mlsc.mp4";
 
 const Root = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const Root = () => {
         <div id="preloader">
           <div id="ctn-preloader" className="ctn-preloader">
             <div className="animation-preloader">
-              <Loading />
+              <video src={bgvideo} autoPlay muted></video>
             </div>
             <div className="loader-section section-left"></div>
             <div className="loader-section section-right"></div>
