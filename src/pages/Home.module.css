@@ -16,7 +16,9 @@
 .home_content {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+}
+
+.hero_title {
     position: absolute;
     top: 40%;
     left: 10%;
@@ -42,35 +44,9 @@ h1>span {
 .hero_title p {
     font-size: 25px;
     font-weight: 600;
+    margin-left: .3rem;
     color: rgb(255, 255, 255);
 }
-
-/* 
-.btn_container {
-    display: flex;
-} */
-/* 
-.btn {
-    border-radius: 2rem;
-    border: none;
-    padding: .5em 2em;
-    background-color: rgb(35, 65, 240);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: rgb(35, 65, 240) ;
-}
-
-.btn span {
-    margin-left: 0.4rem;
-    font-size: 20px;
-    font-weight: 900;
-} */
 
 @keyframes animate-gradient {
     0% {

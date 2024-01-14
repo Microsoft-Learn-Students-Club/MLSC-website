@@ -7,7 +7,7 @@ import styles from './Works.module.css';
 const Works = () => {
     return (
         <>
-            <section>
+            <section className={styles.work_section}>
                 <Events />
                 <div className={styles.btn_container}>
                     <Link to="/events" className={styles.btn}>Checkout Events<span>↗</span></Link>
