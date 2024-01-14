@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../components/Card";
 import "../pages/Team.css";
 import teamData from "../utils/data.json";
@@ -25,11 +24,10 @@ const Team = () => {
       return (
         <div className="dropdown-options">
           <p
-            className={`w-fit pointer-events-auto dropdown-option dropdown-heading ${
-              selectedSection === "App"
-                ? "text-pastel_red"
-                : "text-grey hover:text-pastel_red"
-            } cursor-pointer text-lg lg:text-xl`}
+            className={`w-fit pointer-events-auto dropdown-option dropdown-heading ${selectedSection === "App"
+              ? "text-pastel_red"
+              : "text-grey hover:text-pastel_red"
+              } cursor-pointer text-lg lg:text-xl`}
             onClick={() => scrollToSection("App")}
             style={{ marginLeft: "1em" }}
           >
@@ -40,11 +38,10 @@ const Team = () => {
           </p>
 
           <p
-            className={`w-fit pointer-events-auto dropdown-option ${
-              selectedSection === "ML"
-                ? "text-pastel_blue"
-                : "text-grey hover:text-pastel_blue"
-            } cursor-pointer text-lg lg:text-xl`}
+            className={`w-fit pointer-events-auto dropdown-option ${selectedSection === "ML"
+              ? "text-pastel_blue"
+              : "text-grey hover:text-pastel_blue"
+              } cursor-pointer text-lg lg:text-xl`}
             onClick={() => scrollToSection("ML")}
             style={{ marginLeft: "1em" }}
           >
@@ -55,11 +52,10 @@ const Team = () => {
           </p>
 
           <p
-            className={`w-fit pointer-events-auto dropdown-option ${
-              selectedSection === "Web"
-                ? "text-yellow"
-                : "text-grey hover:text-yellow"
-            } cursor-pointer text-lg lg:text-xl`}
+            className={`w-fit pointer-events-auto dropdown-option ${selectedSection === "Web"
+              ? "text-yellow"
+              : "text-grey hover:text-yellow"
+              } cursor-pointer text-lg lg:text-xl`}
             onClick={() => scrollToSection("Web")}
             style={{ marginLeft: "1em" }}
           >
@@ -112,32 +108,29 @@ const Team = () => {
           </p>
           <div className="flex flex-col gap-2 mt-8 w-fit">
             <div
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "LEADS"
-                  ? "underline text-yellow"
-                  : "text-grey hover:text-yellow"
-              } cursor-pointer text-lg lg:text-xl`}
+              className={`w-fit pointer-events-auto ${selectedSection === "LEADS"
+                ? "underline text-yellow"
+                : "text-grey hover:text-yellow"
+                } cursor-pointer text-lg lg:text-xl`}
               onClick={() => scrollToSection("LEADS")}
             >
               LEADS
             </div>
             <p
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "Corporate"
-                  ? "underline text-pastel_green"
-                  : "text-grey hover:text-pastel_green"
-              } cursor-pointer text-lg lg:text-xl`}
+              className={`w-fit pointer-events-auto ${selectedSection === "Corporate"
+                ? "underline text-pastel_green"
+                : "text-grey hover:text-pastel_green"
+                } cursor-pointer text-lg lg:text-xl`}
               onClick={() => scrollToSection("Corporate")}
             >
               Corporate
             </p>
             <div className="relative inline-block">
               <div
-                className={`w-fit pointer-events-auto ${
-                  selectedSection === "App"
-                    ? "underline text-pastel_red"
-                    : "text-grey hover:text-pastel_red"
-                } cursor-pointer text-lg lg:text-xl`}
+                className={`w-fit pointer-events-auto ${selectedSection === "App"
+                  ? "underline text-pastel_red"
+                  : "text-grey hover:text-pastel_red"
+                  } cursor-pointer text-lg lg:text-xl`}
                 onClick={() => {
                   toggleAppDropdown();
                 }}
@@ -147,11 +140,10 @@ const Team = () => {
               {renderDropdownOptions()}
             </div>
             <div
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "Outreach"
-                  ? "underline text-pastel_green"
-                  : "text-grey hover:text-pastel_green"
-              } cursor-pointer text-lg lg:text-xl`}
+              className={`w-fit pointer-events-auto ${selectedSection === "Outreach"
+                ? "underline text-pastel_green"
+                : "text-grey hover:text-pastel_green"
+                } cursor-pointer text-lg lg:text-xl`}
               onClick={() => scrollToSection("Outreach")}
             >
               Outreach
