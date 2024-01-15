@@ -1,6 +1,6 @@
 import mlscLogo from '../assets/mlsclogo.png'
 import styles from './Footer.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
     return (
@@ -11,35 +11,35 @@ const Footer = () => {
                         <div className={styles.footer_logo}>
                             <img src={mlscLogo} alt="MLSC VCET" />
                         </div>
-                        <div className={styles.footer_contact}>
-                            <h4>Contact us</h4>
-                            <div className={`flex_center | ${styles.contacts}`}>
-                                {/* <p><span><FontAwesomeIcon icon="fa-solid fa-envelope" /></span> mlsc@vcet.edu</p> */}
-                                <p>Rishabh Tripathi: +91 9369744734</p>
-                                <p>Kshitij Patil: +91 9323544113</p>
+                        <div className={styles.footer_social}>
+                            <div className={`flex_center | ${styles.social_media}`}>
+                                <ul className={styles.social_media_content}>
+                                    <li className={styles.flex_li}><a href=''><h3><span><FontAwesomeIcon icon="fa-solid fa-square-full" /></span>Twitter</h3></a></li>
+                                    <li className={styles.flex_li}><a href=''><h3><span><FontAwesomeIcon icon="fa-solid fa-square-full" /></span>Github</h3></a></li>
+                                    <li className={styles.flex_li}><a href='https://codingadda.hashnode.dev/'><h3><span><FontAwesomeIcon icon="fa-solid fa-square-full" /></span>Hashnode</h3></a></li>
+                                </ul>
                             </div>
                         </div>
                         <div className={styles.footer_social}>
-                            <h4>Follow us</h4>
-                            <div className={`flex_center | ${styles.socialmedia}`}>
-                                <a className={styles.social_icon} href="https://www.linkedin.com/company/mlsc-vcet/mycompany/" target="_blank" rel='noreferrer'><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a>
-                                <a className={styles.social_icon} href="https://github.com/Microsoft-Learn-Students-Club" target="_blank" rel='noreferrer'><FontAwesomeIcon icon="fa-brands fa-github" /></a>
-                                <a className={styles.social_icon} href="https://www.instagram.com/mlsc_vcet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" rel='noreferrer'><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>
+                            <div className={`flex_center | ${styles.social_media}`}>
+                                <ul className={`${styles.social_media_content}`}>
+                                    <li className={styles.flex_li}><a href=''><h3><span><FontAwesomeIcon icon="fa-solid fa-square-full" /></span>Instagram</h3></a></li>
+                                    <li className={styles.flex_li}><a href=''><h3><span><FontAwesomeIcon icon="fa-solid fa-square-full" /></span>Youtube</h3></a></li>
+                                    <li className={styles.flex_li}><a href=''><h3><span><FontAwesomeIcon icon="fa-solid fa-square-full" /></span>Linkedin</h3></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={`flex_center | ${styles.footer_contact}`}>
+                            <div className={styles.footer_email}>
+                                <p>Email :</p>
+                                <p>mlsc@vcet.edu.in</p>
+                            </div>
+                            <div className={styles.footer_credits}>
+                                <p>Handcrafted :</p>
+                                <p>Team MLSC with ❤️</p>
                             </div>
                         </div>
                     </div>
-
-                    <div className={styles.footer_below}>
-                        <div className={`flex_center | ${styles.footer_copyright}`}>
-                            <p>
-                                <sup>&#64;</sup>{new Date().getFullYear()} MLSC VCET. All right reserved.
-                            </p>
-                            <p>
-                                Handcrafted by Team MLSC with ❤️
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </>
