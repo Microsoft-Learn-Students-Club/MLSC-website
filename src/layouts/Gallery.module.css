@@ -12,7 +12,7 @@
 .slider {
     position: relative;
     height: 100%;
-    margin-top: 2.7rem;
+    margin-top: 2rem;
     margin-bottom: 6rem;
 }
 
@@ -52,5 +52,4 @@
 .slide.active {
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
 }
