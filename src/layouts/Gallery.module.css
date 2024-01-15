@@ -1,0 +1,56 @@
+.gallery_container {
+    flex-direction: column;
+}
+
+.gallery_title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    margin-top: 2.7rem;
+    margin-bottom: 6rem;
+}
+
+.image {
+    max-width: 100%;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.right_arrow {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left_arrow {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
