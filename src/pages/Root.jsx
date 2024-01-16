@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../layouts/Navbar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ScrollToTop from "../components/ScrollToTop";
 import bgvideo from "../assets/mlsc.mp4";
 
 const Root = () => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const preloader = document.getElementById("preloader");
     const ctnPreloader = document.getElementById("ctn-preloader");
@@ -16,6 +18,7 @@ const Root = () => {
       if (ctnPreloader.classList.contains("loaded")) {
         setTimeout(() => {
           preloader.parentNode.removeChild(preloader);
+          setLoading(false);
         }, 1000);
       }
     }, 4000);
@@ -23,20 +26,23 @@ const Root = () => {
 
   return (
     <>
-      <ScrollToTop />
-      <Navbar />
-      <Outlet />
-      <section>
-        <div id="preloader">
-          <div id="ctn-preloader" className="ctn-preloader">
-            <div className="animation-preloader">
-              <video src={bgvideo} autoPlay muted></video>
+      {loading ? (
+        <section>
+          <div id="preloader">
+            <div id="ctn-preloader" className="ctn-preloader">
+              <div className="animation-preloader">
+                <video src={bgvideo} autoPlay muted></video>
+              </div>
             </div>
-            <div className="loader-section section-left"></div>
-            <div className="loader-section section-right"></div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <>
+          <ScrollToTop />
+          <Navbar />
+          <Outlet />
+        </>
+      )}
     </>
   );
 };
