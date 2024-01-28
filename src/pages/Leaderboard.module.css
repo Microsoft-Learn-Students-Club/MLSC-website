@@ -33,12 +33,19 @@
     gap: 2px;
     color: black;
   }
-  
-  .top3 {
-    margin-top: 5em;
+  .performer {
     display: flex;
     justify-content: center;
-    gap: 15em;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-top: 2em;
+  }
+  .top3 {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
     text-align: center;
     padding: 16px;
     width: 100%;
@@ -49,7 +56,7 @@
   .topimage_container {
     margin-bottom: 50px;
     min-width: fit-content;
-    width: 15em;
+    width: 20em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,42 +68,64 @@
     width: 9em;
     height: 9em;
     z-index: 1;
-    border-radius: 100%;
+    border-radius: 20%;
   }
   .topimg_2 {
     width: 8em;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border: 2px solid rgb(47, 47, 113);
     background-color: rgb(47, 47, 113);
-    border-radius: 100%;
+    border-radius: 20%;
     z-index: 1;
     height: 8em;
   }
   .topimg_3 {
     width: 8em;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border: 2px solid rgb(33, 134, 33);
     background-color: rgb(33, 134, 33);
-    z-index: 1;
-    border-radius: 100%;
+    /* z-index: 1; */
+    border-radius: 20%;
     height: 8em;
   }
   
   .toprank {
     font-size: 30px;
-    /* font-weight: 400; */
-    margin-top: -1em;
-    width: 43px;
-    height: 43px;
-    border-radius: 100%;
-    background-color: rgb(175, 175, 44);
+    font-weight: 200;
+    margin-top: -2em;
+    margin-left: 4em;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: rgb(147, 147, 0);
     border: 1px solid white;
     z-index: 1;
-    color: white;
+    color: black;
+  }
+
+  .number{
+    font-size: 35px;
+    display: flex;
+    /* justify-content: center; */
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 3em; */
+    /* width: 43px; */
+    /* height: 43px; */
+    /* border-radius: 100%; */
+    /* background-color: rgb(175, 175, 44); */
+    /* border: 1px solid white; */
+    /* z-index: 1; */
+    color: black;
+  }
+  .tag{
+    font-size: 12px;
   }
 
   .icon{
-    margin-top: 8px;
+    margin-top: 2px;
   }
   
   .topdetails {
@@ -106,36 +135,56 @@
     border-radius: 10%;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5em;
-    margin-top: -4em;
+    align-items: center;
+    padding-top: 2em;
+    /* margin-top: -4em; */
     gap: 2em;
     text-align: center;
     /* z-index: -10px; */
     padding-bottom: 16px;
-    background-color: cadetblue;
+    background-color: rgba(255, 255, 255, 0.286);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     color: black;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
   }
-  
+  .topdetails:hover{
+    background-color: rgba(125, 122, 122, 0.486);
+    transform: perspective(1000px) rotateX(-10deg) translateY(-10px);
+  }
   .topname {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    color: rgb(174, 10, 10);
-    margin-top: -1em;
+    color: white;
+    margin-top: -10px;
   }
   
   .toprankdetail {
     font-size: 50px;
     font-weight: 800;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: rgb(201, 134, 134);
     font-family: "Franklin Gothic Medium";
-    margin-top: em;
+    margin-top: 1em;
   }
   
   .topteamposition {
     font-size: 20px;
     font-weight: 600;
-    color: black;
+    color: white;
     margin-top: -1em;
+    margin-bottom: 1em;
+  }
+
+  .mention {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-top: -10px;
   }
   
   .individual {
@@ -157,7 +206,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+  .individual:hover{
+    transform: perspective(1000px) rotateX(-10deg) translateY(-10px);
+  }
+  .first:hover{
+    transform: perspective(1000px) rotateX(-10deg) translateY(-10px);
+  }
   .first {
     width: 50%;
     border-top-right-radius: 15px;
@@ -201,9 +255,13 @@
   }
   
   .table_rank {
-    font-size: 20px;
+    font-size: 30px;
+    color: white;
+    /* height: px; */
   }
-  
+  .last:hover{
+    transform: perspective(1000px) rotateX(-10deg) translateY(-10px);
+  }
   .last {
     width: 50%;
     border-bottom-right-radius: 15px;
