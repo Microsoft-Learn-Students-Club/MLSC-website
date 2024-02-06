@@ -14,26 +14,6 @@ const Leaderboard = () => {
   const nineth = { name: "Om Achrekar", team: "lead", rank: "9" }
   const tenth = { name: "Karan Patra", team: "lead", rank: "10" }
 
-
-
-
-  const rendertable = (section, memberName, Rank) => {
-    return (
-      teamData[section]?.filter(member => member.name === memberName).map((member) => (
-        <>
-          <div>
-            <img src={member.imgSrc} alt={member.name} className={styles.indi_img} />
-          </div>
-          <div className={styles.table_info}>
-            <p className={styles.table_name}>{member.name}</p>
-            <p className={styles.table_team}>{member.role}</p>
-          </div>
-          <p className={styles.table_rank}>{Rank} </p>
-        </>
-      )) || []
-    );
-  };
-
   const rendertop1 = (section, memberName) => {
     return (
       teamData[section]?.filter(member => member.name === memberName).map((member) => (
@@ -52,6 +32,7 @@ const Leaderboard = () => {
       )) || []
     );
   };
+
   const rendertop2 = (section, memberName) => {
     return (
       teamData[section]?.filter(member => member.name === memberName).map((member) => (
@@ -70,6 +51,7 @@ const Leaderboard = () => {
       )) || []
     );
   };
+
   const rendertop3 = (section, memberName) => {
     return (
       teamData[section]?.filter(member => member.name === memberName).map((member) => (
@@ -82,9 +64,28 @@ const Leaderboard = () => {
             <p className={styles.toprank} style={{ background: 'rgb(205, 127, 50' }}>
               <p className={styles.number}>3 <p className={styles.tag}>rd</p></p>
             </p>
-            <p className={styles.topname}>{member.name}</p>
-            <p className={styles.topteamposition}>{member.role}</p>
+            <div className={styles.flex_top}>
+              <p className={styles.topname}>{member.name}</p>
+              <p className={styles.topteamposition}>{member.role}</p>
+            </div>
           </div>
+        </>
+      )) || []
+    );
+  };
+
+  const rendertable = (section, memberName, Rank) => {
+    return (
+      teamData[section]?.filter(member => member.name === memberName).map((member) => (
+        <>
+          <div>
+            <img src={member.imgSrc} alt={member.name} className={styles.indi_img} />
+          </div>
+          <div className={styles.table_info}>
+            <p className={styles.table_name}>{member.name}</p>
+            <p className={styles.table_team}>{member.role}</p>
+          </div>
+          <p className={styles.table_rank}>{Rank} </p>
         </>
       )) || []
     );
@@ -92,6 +93,7 @@ const Leaderboard = () => {
 
   return (
     <div className={styles.leaderboard_section}>
+
       <p className={styles.performer}>Achievers of the Month</p>
       <section className={styles.top3}>
 
@@ -104,7 +106,9 @@ const Leaderboard = () => {
         <div className={styles.topimage_container} id='rank-3'>
           {rendertop3(third.team, third.name, third.rank)}
         </div>
+
       </section>
+
       <div className={styles.leaderboard_table}>
         <p className={styles.mention}>Notable Mentions</p>
         <div className={styles.first}>

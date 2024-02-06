@@ -21,6 +21,10 @@
     line-height: 1.2;
 }
 
+.flex_li {
+    margin: 1rem 0;
+}
+
 .flex_li span {
     font-size: 13px;
     margin-right: .5rem;
