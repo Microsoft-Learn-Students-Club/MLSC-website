@@ -8,29 +8,8 @@
   animation: drop-in 1200ms ease 300ms backwards;
 }
 
-.leaderboard_section table {
-  animation: drop-in 1500ms ease 500ms backwards;
-  width: 50%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid red;
-  margin: 0 auto;
-  margin-top: 2em;
-  color: white;
-  text-decoration-color: white;
-}
-
 .leaderboard_table {
   padding-bottom: 5em;
-}
-
-.leaderboard_section table td {
-  text-align: center;
-  padding: 16px;
-  border: 1px solid red;
-  background-color: white;
-  gap: 2px;
-  color: black;
 }
 
 .performer {
@@ -60,21 +39,7 @@
   align-items: center;
 }
 
-.topimg_1 {
-  width: 100%;
-  margin-bottom: -6px;
-  height: 18rem;
-  border-radius: 10px;
-}
-
-.topimg_2 {
-  width: 100%;
-  margin-bottom: -6px;
-  height: 18rem;
-  border-radius: 10px;
-}
-
-.topimg_3 {
+.topimg_1, .topimg_2, .topimg_3 {
   width: 100%;
   margin-bottom: -6px;
   height: 18rem;
@@ -148,14 +113,6 @@
   color: white;
   line-height: 1;
   margin-bottom: 2rem;
-}
-
-.toprankdetail {
-  font-size: 50px;
-  font-weight: 800;
-  align-items: end;
-  color: rgb(201, 134, 134);
-  background: linear-gradient(300deg, #564738 0%, #ad720d 85%)
 }
 
 .mention {

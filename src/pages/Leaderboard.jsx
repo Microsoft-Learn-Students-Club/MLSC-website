@@ -62,7 +62,6 @@ const Leaderboard = () => {
         <>
           <div className={styles.topdetails}>
             <div>
-
               <img className={styles.topimg_3} src={member.imgSrc} alt="" />
             </div>
             <p className={styles.toprank} style={{
@@ -70,10 +69,8 @@ const Leaderboard = () => {
             }}>
               <p className={styles.number}>3 <p className={styles.tag}>rd</p></p>
             </p>
-            <div className={styles.flex_top}>
-              <p className={styles.topname}>{member.name}</p>
-              <p className={styles.topteamposition}>{member.role}</p>
-            </div>
+            <p className={styles.topname}>{member.name}</p>
+            <p className={styles.topteamposition}>{member.role}</p>
           </div>
         </>
       )) || []
