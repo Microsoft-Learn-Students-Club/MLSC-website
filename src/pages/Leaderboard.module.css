@@ -39,25 +39,31 @@
   align-items: center;
 }
 
-.topimg_1, .topimg_2, .topimg_3 {
+.topimg_1, .topimg_2{
   width: 100%;
   margin-bottom: -6px;
   height: 18rem;
   border-radius: 10px;
 }
 
+.topimg_3 {
+  width: 100%;
+  margin-bottom: -6px;
+  height: 18rem;
+  padding: 0 1em;
+  border-radius: 10px;
+}
+
 .toprank {
   font-size: 30px;
   font-weight: 400;
-  margin-top: -3.5rem;
-  margin-left: 15.1rem;
+  position: absolute;
+  top: 60%;
+  right: 3%;
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid white;
   z-index: 1;
-  color: black;
 }
 
 .number {
