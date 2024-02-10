@@ -22,7 +22,9 @@ const Leaderboard = () => {
             <div>
               <img className={styles.topimg_1} id='img1' src={member.imgSrc} alt="" />
             </div>
-            <div className={styles.toprank} style={{ background: 'rgb(255, 215, 0' }}>
+            <div className={styles.toprank} style={{
+              background: 'radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)',
+            }}>
               <div className={styles.number}>1 <p className={styles.tag}>st</p> </div>
             </div>
             <p className={styles.topname}>{member.name}</p>
@@ -41,7 +43,9 @@ const Leaderboard = () => {
             <div>
               <img className={styles.topimg_2} src={member.imgSrc} alt="" />
             </div>
-            <p className={styles.toprank} style={{ background: 'rgb(131, 137, 150' }}>
+            <p className={styles.toprank} style={{
+              background: 'linear-gradient(300deg, #2d3436 0%, #d3d3d3 85%)'
+            }}>
               <p className={styles.number}>2 <p className={styles.tag}>nd</p></p>
             </p>
             <p className={styles.topname}>{member.name}</p>
@@ -61,7 +65,9 @@ const Leaderboard = () => {
 
               <img className={styles.topimg_3} src={member.imgSrc} alt="" />
             </div>
-            <p className={styles.toprank} style={{ background: 'rgb(205, 127, 50' }}>
+            <p className={styles.toprank} style={{
+              background: 'radial-gradient(ellipse farthest-corner at right bottom, #8C7853 0%, #7C6E4E 89%, #6C6448 30%, #5C5A43 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)',
+            }}>
               <p className={styles.number}>3 <p className={styles.tag}>rd</p></p>
             </p>
             <div className={styles.flex_top}>

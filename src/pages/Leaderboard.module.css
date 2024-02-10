@@ -155,6 +155,7 @@
   font-weight: 800;
   align-items: end;
   color: rgb(201, 134, 134);
+  background: linear-gradient(300deg, #564738 0%, #ad720d 85%)
 }
 
 .mention {
