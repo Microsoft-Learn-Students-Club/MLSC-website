@@ -65,7 +65,7 @@ const Leaderboard = () => {
               <img className={styles.topimg_3} src={member.imgSrc} alt="" />
             </div>
             <p className={styles.toprank} style={{
-              background: 'radial-gradient(ellipse farthest-corner at right bottom, #8C7853 0%, #7C6E4E 89%, #6C6448 30%, #5C5A43 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)',
+              background: 'radial-gradient(ellipse farthest-corner at right bottom, #8C7853 0%, #7C6E4E 8%, #6C6448 20%, #5C5A43 10%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)',
             }}>
               <p className={styles.number}>3 <p className={styles.tag}>rd</p></p>
             </p>
