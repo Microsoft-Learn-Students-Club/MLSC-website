@@ -15,7 +15,15 @@ const CounterUp = () => {
                     <h1 className={styles.title}>Our Works</h1>
                     <div className={`flex_center | ${styles.work_container}`}>
                         <div className={styles.right_content}>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quisquam laborum nemo, repudiandae, vero quibusdam dolorem, sint officiis sapiente possimus dignissimos! Error accusamus adipisci magni, quasi, impedit corrupti deleniti deserunt tenetur fugiat, esse eum minus aliquam accusantium optio aspernatur tempore nam? Eligendi officiis animi corrupti placeat maxime reiciendis omnis voluptatum pariatur ducimus doloremque hic sapiente nostrum consequatur nemo assumenda quasi veritatis itaque dicta nisi fuga quam nulla, expedita voluptates repellat? Saepe id provident vero maxime sit rerum quos, iure sint ut debitis ipsam aut fugit consequuntur. Dignissimos consequuntur labore magni reprehenderit, architecto voluptatem nostrum eveniet ex aperiam pariatur. Consectetur, laboriosam.</p>
+                            <p>The Microsoft Learn Students Club (MLSC) serves as a dynamic hub for student learning and
+                                collaboration. Through workshops like React JS Mastery and Azure Fundamentals Challenge,
+                                MLSC empowers students with hands-on experiences and expert guidance. Participants
+                                receive completion certificates, skill badges, and access to premium resources. MLSC&#39;s
+                                commitment extends to cultivating an environment for thriving learning journeys, focusing
+                                on emerging technologies, skill development, and networking. The impactful workshops
+                                equip participants with practical knowledge, facilitating their navigation in the ever-evolving
+                                tech landscape. Join MLSC for a journey of continuous learning, collaboration, and
+                                excellence.</p>
                         </div>
                         <div className={`flex_center | ${styles.left_content}`}>
                             <div className={`flex_center | ${styles.counter_page_container}`}>
