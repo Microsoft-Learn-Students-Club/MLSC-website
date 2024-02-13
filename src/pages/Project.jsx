@@ -41,7 +41,9 @@ const Project = () => {
                                     <h3 className={styles.headline}>{project.title}</h3>
                                     <div className={styles.text}>
                                         <p>{project.text}</p>
-                                        <button className={styles.proj_btn}>View<span>↗</span></button>
+                                        <a href={project.link} className={styles.proj_link}>
+                                            <button className={styles.proj_btn}>View<span>↗</span></button>
+                                        </a>
                                     </div>
                                 </div>
                             ))}
