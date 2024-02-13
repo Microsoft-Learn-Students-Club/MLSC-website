@@ -17,23 +17,30 @@ const Events = () => {
     {
       title: "ReactJS Workshop",
       imgSrc: workshopEventImg,
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid, explicabo excepturi laborum recusandae repellat labore nemo quis fugit. Omnis voluptatum molestias corporis, ut totam alias. Saepe quibusdam inventore itaque sequi labore illum culpa modi distinctio harum similique, quidem ipsam ab id ut dolores molestiae. Nobis maxime unde esse vel.",
+      description: `Participants in MLSC's recent React JS workshop engaged in hands-on coding sessions under 
+      expert guidance, gaining insights into cutting-edge developments. The workshop included an 
+      exclusive Q&A with Coding Adda's instructors. Certificates were awarded to those 
+      demonstrating commitment and outstanding achievements.`,
       info: [
-        { label: "Organizing People", value: 4 },
-        { label: "Organizing People", value: 4 },
-        { label: "Organizing People", value: 4 },
-        { label: "Organizing People", value: 4 },
+        { label: "Organizing People", value: 8 },
+        { label: "Participants", value: 194 },
+        { label: "Date and Time", value: `8th to 10th Dec 2023, 6:30 PM` },
+        { label: "Event Span", value: `3 days` },
       ],
     },
     {
       title: "Fundamentally Azure Cloud Skill Challenge",
       imgSrc: azureEventImg,
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid, explicabo excepturi laborum recusandae repellat labore nemo quis fugit. Omnis voluptatum molestias corporis, ut totam alias. Saepe quibusdam inventore itaque sequi labore illum culpa modi distinctio harum similique, quidem ipsam ab id ut dolores molestiae. Nobis maxime unde esse vel.",
+      description: `In the Azure Fundamentals Challenge by Microsoft Learn Students Club, beginners gained 
+      essential Azure knowledge, receiving certificates and exclusive Skill Badges. Some also 
+      earned rewards like a three-month Xbox/PC Game Pass Ultimate and a twelve-month 
+      LinkedIn Premium Voucher. Congratulations to all for embracing the challenge and unlocking 
+      Azure's potential!`,
       info: [
-        { label: "Organizing People", value: 4 },
-        { label: "Organizing People", value: 4 },
-        { label: "Organizing People", value: 4 },
-        { label: "Organizing People", value: 4 },
+        { label: "Organizing People", value: 8 },
+        { label: "Participants", value: 221 },
+        { label: "Date and Time", value: `26th Sept to 17th Oct 2023, 9 AM` },
+        { label: "Event Span", value: `22 days`  },
       ],
     },
   ];
