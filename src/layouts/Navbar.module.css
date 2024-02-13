@@ -27,6 +27,9 @@
     width: 2rem;
 }
 
+.logo h3 {
+    color: white;
+}
 .logo span {
     color: rgb(35, 65, 240);
 }

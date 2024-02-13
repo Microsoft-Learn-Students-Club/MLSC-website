@@ -25,7 +25,7 @@ const Events = () => {
         { label: "Organizing People", value: 8 },
         { label: "Participants", value: 194 },
         { label: "Date and Time", value: `8th to 10th Dec 2023, 6:30 PM` },
-        { label: "Event Span", value: 3 },
+        { label: "Event Span", value: `3 days` },
       ],
     },
     {
@@ -40,7 +40,7 @@ const Events = () => {
         { label: "Organizing People", value: 8 },
         { label: "Participants", value: 221 },
         { label: "Date and Time", value: `26th Sept to 17th Oct 2023, 9 AM` },
-        { label: "Event Span", value: 22  },
+        { label: "Event Span", value: `22 days`  },
       ],
     },
   ];

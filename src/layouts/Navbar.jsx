@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className={`flex_center | ${styles.nav_wrapper}`}>
           <div className={`flex_center | ${styles.logo}`}>
             <img src={mlscLogo} className={styles.mlsc_logo}></img>
-            <h3>MLSC<span>VCET</span></h3>
+            <NavLink to="/"><h3>MLSC<span>VCET</span></h3></NavLink>
           </div>
           <ul className={styles.nav_link_container}>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/">Home</NavLink></li>
