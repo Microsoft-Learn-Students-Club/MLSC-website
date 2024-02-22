@@ -1,8 +1,8 @@
-# Offical Documentation for MLSC Website
+# Offical Documentation for MLSC VCET Website
 
 ## Overview
 
-Welcome to the official documentation for the MLSC Website, the dynamic and immersive website created by the Web Team! where you can Immerse yourself in seminars, hackathons, and interactive workshops where we showcase our projects, engage in vibrant discussions, and unleash our tech potential.
+Welcome to the official documentation for the MLSC VCET Website, the dynamic and immersive website created by the Web Team! where you can Immerse yourself in seminars, hackathons, and interactive workshops where we showcase our projects, engage in vibrant discussions, and unleash our tech potential.
 
 ## 📦 Technologies Used
 
@@ -13,9 +13,9 @@ Welcome to the official documentation for the MLSC Website, the dynamic and imme
 - `GSAP`
 - `Firebase`
 
-## Running the MLSC Website Locally
+## Running the MLSC VCET Website Locally
 
-To run the MLSC Website locally, follow the guidelines below. Ensure that you have Node.js and npm installed on your machine.
+To run the MLSC VCET Website locally, follow the guidelines below. Ensure that you have Node.js and npm installed on your machine.
 
 ### Prerequisites
 - **Node.js:** Make sure Node.js is installed. You can download it from [here](https://nodejs.org/).
@@ -43,10 +43,10 @@ To run the MLSC Website locally, follow the guidelines below. Ensure that you ha
    This command will start the development server and open the app in your default web browser.
 
 5. **Access the App:**
-   Open your web browser and go to [http://localhost:5173](http://localhost:5173). You should see the MLSC Website in React + Vite.js app running locally.
+   Open your web browser and go to [http://localhost:5173](http://localhost:5173). You should see the MLSC VCET Website in React + Vite.js app running locally.
 
 6. **Explore the App:**
-   You can now explore the different sections of the MLSC Website, such as Home, Works, Team, Leaderboard and Contact Us.
+   You can now explore the different sections of the MLSC VCET Website, such as Home, Works, Team, Leaderboard and Contact Us.
 
 7. **Stop the Development Server:**
    To stop the development server, press `Ctrl + C` in the terminal where the server is running.
@@ -58,7 +58,7 @@ To run the MLSC Website locally, follow the guidelines below. Ensure that you ha
 
 ## Contribution Guidelines
 
-We welcome contributions to enhance the MLSC website. Your input is valuable, and following these guidelines ensures a smooth collaboration.
+We welcome contributions to enhance the MLSC VCET website. Your input is valuable, and following these guidelines ensures a smooth collaboration.
 
 ### Getting Started
 
@@ -111,7 +111,7 @@ Thank you for contributing! 🌟
 
 ## Maintainers
 
-The MLSC Website is actively maintained and developed by the following contributors:
+The MLSC VCET Website is actively maintained and developed by the following contributors:
 
 - Mukesh Billa -> GitHub: [bmukesh23](https://github.com/bmukesh23)
 - Adarsh Gupta -> GitHub: [Adarsh7825](https://github.com/Adarsh7825)
