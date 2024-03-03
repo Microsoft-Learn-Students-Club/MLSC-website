@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../components/Card";
 import "../pages/Team.css";
 import teamData from "../utils/data.json";
@@ -25,7 +24,7 @@ const Team = () => {
       return (
         <div className="dropdown-options">
           <p
-            className={`w-fit pointer-events-auto dropdown-option dropdown-heading ${
+            className={`w-fit pointer-events-auto dropdownoption dropdown-heading ${
               selectedSection === "App"
                 ? "text-pastel_red"
                 : "text-grey hover:text-pastel_red"

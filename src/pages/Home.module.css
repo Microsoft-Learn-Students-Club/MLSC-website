@@ -61,3 +61,27 @@ h1>span {
         background-position: 0% 50%;
     }
 }
+
+
+@media (max-width:350px){
+
+    .bg{
+        width: 100%;
+    }
+
+    .hero_title{
+        top: 40%; 
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .hero_title h1{
+        font-size:80px; 
+    }
+
+    .hero_title p{
+        font-size:15px;
+        margin-left: 0;
+    }
+}

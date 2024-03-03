@@ -91,3 +91,54 @@
     background-color: rgb(255, 255, 255);
     color: rgb(35, 65, 240);
 }
+
+@media (max-width:350px){
+    .counter_section{
+        margin: 0;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+
+    .work_container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .right_content p{
+        font-size: 11px;
+        margin-bottom: 1.5rem;
+    }
+
+    .left_content{
+        gap: 2rem;
+    }
+
+    .counter_page_container{
+        width: 100%;
+
+    }
+
+    .counter_page{
+        font-size: 14px;
+        padding: 1.3em;
+    }
+
+    .counter_page_content p{
+        font-size: 12px;
+    }
+
+    .btn{
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+        padding: .7em .6em;
+    }
+
+    .btn span{
+        font-size: 10px;
+        margin-left: .2rem;
+    }
+}
