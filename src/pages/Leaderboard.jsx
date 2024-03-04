@@ -100,13 +100,13 @@ const Leaderboard = () => {
       <p className={styles.performer}>Achievers of the Month</p>
       <section className={styles.top3}>
 
-        <div className={styles.topimage_container} id='rank-2'>
+        <div className={styles.topimage_container_2} id='rank-2'>
           {rendertop2(second.team, second.name, second.rank)}
         </div>
-        <div className={styles.topimage_container} id='rank-1'>
+        <div className={styles.topimage_container_1} id='rank-1'>
           {rendertop1(first.team, first.name, first.rank)}
         </div>
-        <div className={styles.topimage_container} id='rank-3'>
+        <div className={styles.topimage_containe_3} id='rank-3'>
           {rendertop3(third.team, third.name, third.rank)}
         </div>
 

@@ -1,14 +1,17 @@
 @media (min-width:1450px) {
-    .home_container{
-
-    }
-
-    .bg{
-
-    }
-
     .container {
         max-width: 1450px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 36px;
+        margin-top: 2rem;
+        text-align: center;
     }
 }
 
@@ -16,17 +19,59 @@
     .container {
         max-width: 1900px
     }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 40px;
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
 
-@media (max-width:1050px) {
+@media (max-width:1280px){
+    .title{
+        width: 100%;
+        font-size: 38px;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:1050px){
     .container {
         max-width: 1050px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 28px;
+        margin-top: 1rem;
+        text-align: center;
     }
 }
 
 @media (max-width:750px) {
     .container {
         max-width: 750px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 28px;
+        margin-top: 1rem;
+        text-align: center;
     }
 
     .ctn-preloader .animation-preloader .fadeInOut {
@@ -40,12 +85,27 @@
 }
 
 @media (max-width:450px){
+    .section{
+        padding: 0 1em;
+    }
 
+    .title{
+        width: 100%;
+        font-size: 24px;
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
 
 @media (max-width:350px){
+    .section{
+        padding: 0 1em;
+    }
+
     .title{
         width: 100%;
         font-size: 20px;
+        margin-top: 2rem;
+        text-align: center;
     }
 }

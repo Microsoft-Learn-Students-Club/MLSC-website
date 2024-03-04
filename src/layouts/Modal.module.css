@@ -13,7 +13,8 @@
 }
 
 .modal_container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     width: 50%;
     padding: 1em;
@@ -79,4 +80,39 @@
     padding: 0 1em;
     font-size: small;
     font-weight: 600;
+}
+
+@media (max-width:350px) {
+    .modal_container {
+        width: 100%;
+    }
+
+    .modal_title{
+        font-size: 20px;
+        margin-bottom: .5rem;
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .modal_img{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .modal_content, .modal_btn{
+        font-size: 13px;
+    }
+
+    .modal_info_container {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .event_info > span{
+        margin-bottom:1rem;
+    }
+
+    .event_info span > p{
+        font-size: 10px;
+    }
 }

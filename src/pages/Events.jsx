@@ -4,7 +4,7 @@ import workshopEventImg from "../assets/reactjsworkshop.jpeg";
 import azureEventImg from "../assets/azurechallenge.jpeg";
 import styles from './Events.module.css';
 
-const Events = () => {
+const Events = ({count}) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -43,6 +43,21 @@ const Events = () => {
         { label: "Event Span", value: `22 days`  },
       ],
     },
+    {
+      title: "Fundamentally Azure Cloud Skill Challenge",
+      imgSrc: azureEventImg,
+      description: `In the Azure Fundamentals Challenge by Microsoft Learn Students Club, beginners gained 
+      essential Azure knowledge, receiving certificates and exclusive Skill Badges. Some also 
+      earned rewards like a three-month Xbox/PC Game Pass Ultimate and a twelve-month 
+      LinkedIn Premium Voucher. Congratulations to all for embracing the challenge and unlocking 
+      Azure's potential!`,
+      info: [
+        { label: "Organizing People", value: 8 },
+        { label: "Participants", value: 221 },
+        { label: "Date and Time", value: `26th Sept to 17th Oct 2023, 9 AM` },
+        { label: "Event Span", value: `22 days`  },
+      ],
+    },
   ];
 
   return (
@@ -50,7 +65,7 @@ const Events = () => {
       <section className={`section | ${styles.event_section}`}>
         <h1 className='title'>Dive into the Tech Universe with us</h1>
         <div className={`flex_center | ${styles.event_container}`}>
-          {eventsData.map((event, index) => (
+          {eventsData.slice(0, count ? count : eventsData.length).map((event, index) => (
             <div className={`flex_center | ${styles.event_content}`} key={index}>
               <img className={styles.eventImg} src={event.imgSrc} alt={event.title} />
               <div className={styles.event_right_content}>

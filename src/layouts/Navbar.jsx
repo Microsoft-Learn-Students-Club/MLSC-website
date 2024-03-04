@@ -36,10 +36,10 @@ const Navbar = () => {
             <div className={`${styles.bar} ${menuOpen ? styles.open : ""}`}></div>
           </div>
           <ul className={`${styles.nav_link_container} ${menuOpen ? styles.open : ""}`}>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/">Home</NavLink></li>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/team">Team</NavLink></li>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/works">Works</NavLink></li>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`}><NavLink to="/leaderboard">Leaderboard</NavLink></li>
+            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/">Home</NavLink></li>
+            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/team">Team</NavLink></li>
+            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/works">Works</NavLink></li>
+            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/leaderboard">Leaderboard</NavLink></li>
           </ul>
         </div>
       </nav>
