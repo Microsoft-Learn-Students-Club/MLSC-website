@@ -61,3 +61,84 @@ h1>span {
         background-position: 0% 50%;
     }
 }
+
+
+@media (max-width:750px){
+    .home_container{
+        width: 100%;
+    }
+
+    .bg{
+        width: 100%;
+    }
+
+    .hero_title{
+        width: 100%;
+        top: 40%; 
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .hero_title h1{
+        font-size:85px; 
+    }
+
+    .hero_title p{
+        font-size:20px;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width:450px){
+    .home_container{
+        width: 100%;
+    }
+
+    .bg{
+        width: 100%;
+    }
+
+    .hero_title{
+        top: 40%; 
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .hero_title h1{
+        font-size:85px; 
+    }
+
+    .hero_title p{
+        font-size:18px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:350px){
+    .home_container{
+        width: 100%;
+    }
+
+    .bg{
+        width: 100%;
+    }
+
+    .hero_title{
+        top: 40%; 
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .hero_title h1{
+        font-size:80px; 
+    }
+
+    .hero_title p{
+        font-size:15px;
+        margin-left: 0;
+    }
+}

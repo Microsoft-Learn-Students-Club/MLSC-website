@@ -5,7 +5,7 @@ import azureEventImg from "../assets/azurechallenge.jpeg";
 import styles from './Events.module.css';
 import SqlWorkshop from "../assets/SqlWorkshop.jpg";
 import scogoTuring from "../assets/Scogo_Turing.jpg";
-const Events = () => {
+const Events = ({count}) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -75,7 +75,7 @@ const Events = () => {
       <section className={`section | ${styles.event_section}`}>
         <h1 className='title'>Dive into the Tech Universe with us</h1>
         <div className={`flex_center | ${styles.event_container}`}>
-          {eventsData.map((event, index) => (
+          {eventsData.slice(0, count ? count : eventsData.length).map((event, index) => (
             <div className={`flex_center | ${styles.event_content}`} key={index}>
               <img className={styles.eventImg} src={event.imgSrc} alt={event.title} />
               <div className={styles.event_right_content}>

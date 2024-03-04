@@ -28,3 +28,75 @@
 .footer_container {
     margin-top: 4rem;
 }
+
+@media (max-width:1280px){
+    .btn{
+        font-size: 15px;
+        padding: .7em 1.5em;
+        margin: 0 auto;
+    }
+
+    .btn span{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1050px){
+    .btn{
+        font-size: 14px;
+        padding: .7em 1.2em;
+        margin: 0 auto;
+    }
+
+    .btn span{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:750px){
+    .btn{
+        font-size: 13px;
+        padding: .5em 1em;
+        margin: 0 auto;
+    }
+
+    .btn span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:650px){
+    .btn{
+        font-size: 13px;
+        padding: .5em 1em;
+        margin: 0 auto;
+    }
+
+    .btn span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:450px){
+    .btn{
+        font-size: 13px;
+        padding: .5em 1em;
+        margin: 0 auto;
+    }
+
+    .btn span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:350px){
+    .btn{
+        font-size: 13px;
+        padding: .5em 1em;
+        margin: 0 auto;
+    }
+
+    .btn span{
+        font-size: 13px;
+    }
+}

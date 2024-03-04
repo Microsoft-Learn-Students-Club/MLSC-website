@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../components/Card";
 import "../pages/Team.css";
 import teamData from "../utils/data.json";
@@ -25,7 +24,7 @@ const Team = () => {
       return (
         <div className="dropdown-options">
           <p
-            className={`w-fit pointer-events-auto dropdown-option dropdown-heading ${
+            className={`w-fit pointer-events-auto dropdownoption dropdown-heading ${
               selectedSection === "App"
                 ? "text-pastel_red"
                 : "text-grey hover:text-pastel_red"
@@ -158,7 +157,7 @@ const Team = () => {
             </div>
           </div>
         </div>
-        <div className="xs:grid gap-16 p-10 mt-24 md:grid-cols-12 sm:grid">
+        <div className="xs:grid gap-16 mt-24 md:grid-cols-12 sm:grid">
           <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3">
             <div className="lg:hidden block sticky top-[150px] sm:text-base text-2xl"></div>
           </div>

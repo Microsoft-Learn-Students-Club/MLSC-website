@@ -25,7 +25,7 @@ const Home = () => {
   })
 
   return (
-    <>
+    <main>
       <div className={styles.home_container}>
         <div className={styles.bg} id='vanta'></div>
         <div className={styles.home_content}>
@@ -39,7 +39,7 @@ const Home = () => {
       {/* <Gallery  slides={SliderData}/> */}
       <CounterUp />
       <Footer />
-    </>
+    </main>
   )
 
 }

@@ -1,4 +1,78 @@
-@media screen and (max-width: 767px) {
+@media (min-width:1450px) {
+    .container {
+        max-width: 1450px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 36px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (min-width:1900px) {
+    .container {
+        max-width: 1900px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 40px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:1280px){
+    .title{
+        width: 100%;
+        font-size: 38px;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:1050px){
+    .container {
+        max-width: 1050px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 28px;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:750px) {
+    .container {
+        max-width: 750px
+    }
+
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 28px;
+        margin-top: 1rem;
+        text-align: center;
+    }
 
     .ctn-preloader .animation-preloader .fadeInOut {
         height: 8em;
@@ -10,13 +84,28 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .ctn-preloader .animation-preloader .fadeInOut {
-        height: 7em;
-        width: 7em;
+@media (max-width:450px){
+    .section{
+        padding: 0 1em;
     }
 
-    .ctn-preloader .animation-preloader .txt-loading {
-        font: bold 2em 'Montserrat', sans-serif;
+    .title{
+        width: 100%;
+        font-size: 22px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:350px){
+    .section{
+        padding: 0 1em;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 2rem;
+        text-align: center;
     }
 }
