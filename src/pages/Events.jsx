@@ -5,7 +5,7 @@ import azureEventImg from "../assets/azurechallenge.jpeg";
 import styles from './Events.module.css';
 import SqlWorkshop from "../assets/SqlWorkshop.jpg";
 import scogoTuring from "../assets/Scogo_Turing.jpg";
-const Events = () => {
+const Events = ({count}) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
