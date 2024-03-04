@@ -105,9 +105,8 @@ const Team = () => {
           <h1 className="font-extrabold text-yellow uppercase lg:text-5xl md:text-4xl text-6xl">
             Meet The Team
           </h1>
-          <p className="mt-4 font-light text-xl lg:text-2xl ">
-            We’ve got a strong team filled with caffeine addicted developers,
-            gradients loving designers, and machine-like working managers.
+          <p className="mt-4 font-light text-lg lg:text-2xl ">
+          We have got a strong team filled with caffeine-addicted corporate members, gradients-loving outreach team, and machine-like working developers.
           </p>
           <div className="flex flex-col gap-2 mt-8 w-fit">
             <div
