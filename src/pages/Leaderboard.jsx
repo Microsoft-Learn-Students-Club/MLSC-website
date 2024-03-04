@@ -60,7 +60,7 @@ const Leaderboard = () => {
     return (
       teamData[section]?.filter(member => member.name === memberName).map((member) => (
         <>
-          <div className={styles.topdetails}>
+          <div className={`${styles.topdetails} ${styles.topdetails_3}`}>
             <div>
               <img className={styles.topimg_3} src={member.imgSrc} alt="" />
             </div>

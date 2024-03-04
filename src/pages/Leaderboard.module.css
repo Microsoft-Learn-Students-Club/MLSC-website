@@ -246,6 +246,204 @@
 
 @media (max-width:1280px) {
   .performer {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .topdetails .topimg_1, .topimg_2 {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .topdetails .topimg_3{
+    width: 18rem;
+    height: 15rem;
+  }
+
+  .topimg_3 {
+    border-radius: 30px;
+  }
+
+  .topname {
+    font-size: 20px;
+  }
+
+  .topteamposition {
+    font-size: 16px;
+  }
+
+  .mention {
+    font-size: 36px;
+  }
+
+  .leaderboard_table {
+    padding: 0 10em .2em;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .individual {
+    width: 100%;
+  }
+
+  .last {
+    width: 100%;
+  }
+
+  .table_name, .table_rank, .table_team {
+    font-size: 20px;
+  }
+
+  .table_info {
+    max-width: 70%;
+  }
+}
+
+@media (max-width:1050px) {
+  .performer {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .topdetails {
+    gap: 0;
+  }
+
+  .topdetails .topimg_1, .topimg_2, .topimg_3{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .top3 {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .topimage_container_1{
+    order: -1;
+  }
+
+  .topimage_container_2{
+    order: 0;
+  }
+
+  .topimg_3 {
+    border-radius: 30px;
+  }
+
+  .topname {
+    font-size: 20px;
+  }
+
+  .topteamposition {
+    font-size: 16px;
+  }
+
+  .mention {
+    font-size: 30px;
+  }
+
+  .leaderboard_table {
+    padding: 0 3em .2em;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .individual {
+    width: 100%;
+  }
+
+  .last {
+    width: 100%;
+  }
+
+  .table_name, .table_rank, .table_team {
+    font-size: 20px;
+  }
+
+  .table_info {
+    max-width: 70%;
+  }
+}
+
+
+@media (max-width:650px) {
+  .performer {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .topdetails {
+    gap: 0;
+  }
+
+  .topdetails .topimg_1, .topimg_2, .topimg_3{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .top3 {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .topimage_container_1{
+    order: -1;
+  }
+
+  .topimage_container_2{
+    order: 0;
+  }
+
+  .topimg_3 {
+    border-radius: 30px;
+  }
+
+  .topname {
+    font-size: 20px;
+  }
+
+  .topteamposition {
+    font-size: 16px;
+  }
+
+  .mention {
+    font-size: 30px;
+  }
+
+  .leaderboard_table {
+    padding: 0 1.5em .2em;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .individual {
+    width: 100%;
+  }
+
+  .last {
+    width: 100%;
+  }
+
+  .table_name, .table_rank, .table_team {
+    font-size: 18px;
+  }
+
+  .table_info {
+    max-width: 70%;
+  }
+}
+
+@media (max-width:450px) {
+  .performer {
     font-size: 25px;
     text-align: center;
   }

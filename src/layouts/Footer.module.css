@@ -51,6 +51,18 @@
     width: 58%;
 }
 
+@media (max-width:1280px){
+    .footer_contact {
+        margin-left: 4rem;
+        font-size: 12px;
+        text-align:start;
+    }
+
+    .footer_logo img {
+        margin-right: 4rem;
+    }
+}
+
 @media (max-width:1050px) {
     .footer_section {
         padding: 1em;
