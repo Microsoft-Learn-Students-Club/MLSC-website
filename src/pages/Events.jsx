@@ -80,7 +80,6 @@ const Events = ({count}) => {
               <img className={styles.eventImg} src={event.imgSrc} alt={event.title} />
               <div className={styles.event_right_content}>
                 <h2>{event.title}</h2>
-                {/* <h2>{event.Speaker}</h2> */}
                 <p>{event.description}</p>
                 <button onClick={() => toggleModal(event)} type="button" className={styles.event_btn}>
                   Know More
