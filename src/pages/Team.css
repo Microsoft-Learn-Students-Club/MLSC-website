@@ -897,7 +897,7 @@ video {
     opacity: 1
 }
 
-@media (min-width:640px) and (max-width:1024px) {
+@media (min-width:640px){
     .sm\:mt-0 {
         margin-top: 0
     }
