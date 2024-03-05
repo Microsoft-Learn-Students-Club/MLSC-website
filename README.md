@@ -8,10 +8,10 @@ Welcome to the official documentation for the MLSC VCET Website, the dynamic and
 
 - `Vite`
 - `React.js`
-- `Tailwind CSS`
 - `Three.js`
 - `GSAP`
 - `Firebase`
+- `Netlify`
 
 ## Running the MLSC VCET Website Locally
 

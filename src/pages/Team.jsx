@@ -90,7 +90,7 @@ const Team = () => {
 
   return (
     <div className="team-section">
-      <div>
+      <div> 
         <div
           id="team-div"
           style={{
@@ -102,10 +102,10 @@ const Team = () => {
           }}
           className="lg:block hidden fixed pointer-events-none w-7/12 text-white xl:w-4/12 lg:w-4/12 md:w-3/12 pr-2"
         >
-          <h1 className="font-extrabold text-yellow uppercase lg:text-5xl md:text-4xl text-6xl">
+          <h1 className="font-extrabold text-yellow uppercase lg:text-2xl md:text-3xl text-4xl">
             Meet The Team
           </h1>
-          <p className="mt-4 font-light text-lg lg:text-2xl ">
+          <p className="mt-4 font-light">
           We have got a strong team filled with caffeine-addicted corporate members, gradients-loving outreach team, and machine-like working developers.
           </p>
           <div className="flex flex-col gap-2 mt-8 w-fit">
@@ -162,37 +162,37 @@ const Team = () => {
           </div>
           <div className="grid col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 sm:mt-0 z-50">
             <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3">
-              <div id="LEADS" className="sm:flex flex lg:py-0 sm:py-10 py-24">
-                <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+              <div id="LEADS" className="sm:flex flex lg:py-0 sm:py-10 py-4">
+                <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   LEADS
                 </h2>
               </div>
               {renderCards("lead")}
               <div
                 id="Corporate"
-                className="sm:flex flex lg:py-0 sm:py-10 py-24"
+                className="sm:flex flex lg:py-0 sm:py-10 py-4"
               >
-                <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+                <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   Corporate
                 </h2>
               </div>
               {renderCards("corporate")}
               <div></div>
-              <div id="App" className="sm:flex flex lg:py-0 sm:py-10 py-24">
-                <h2 className="font-extrabold text-pastel_red m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+              <div id="App" className="sm:flex flex lg:py-0 sm:py-10 py-4">
+                <h2 className="font-extrabold text-pastel_red m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   App
                 </h2>
               </div>
               {renderCards("App")}
-              <div id="ML" className="sm:flex flex lg:py-0 sm:py-10 py-24">
-                <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+              <div id="ML" className="sm:flex flex lg:py-0 sm:py-10 py-4">
+                <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   ML
                 </h2>
               </div>
               {renderCards("ML")}
               <div></div>
-              <div id="Web" className="sm:flex flex lg:py-0 sm:py-10 py-24">
-                <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+              <div id="Web" className="sm:flex flex lg:py-0 sm:py-10 py-4">
+                <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   Web
                 </h2>
               </div>
@@ -201,9 +201,9 @@ const Team = () => {
               <div></div>
               <div
                 id="Outreach"
-                className="sm:flex flex lg:py-0 sm:py-10 py-24"
+                className="sm:flex flex lg:py-0 sm:py-10 py-4"
               >
-                <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-6xl">
+                <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   Outreach
                 </h2>
               </div>

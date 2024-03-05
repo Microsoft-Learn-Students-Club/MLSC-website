@@ -87,7 +87,6 @@
     .event_content{
         width: 100%;
         padding: 1em;
-
         gap: 2rem;
     }
 
@@ -97,11 +96,11 @@
     }
 
     .event_right_content h2{
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .event_right_content p{
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .event_right_content > .event_btn{
@@ -137,7 +136,7 @@
     }
 
     .event_right_content p{
-        font-size: 1px;
+        font-size: 14px;
     }
 
     .event_right_content > .event_btn{
