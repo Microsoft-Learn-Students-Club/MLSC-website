@@ -71,6 +71,11 @@
         text-align: center;
     }
 
+    .animation-preloader video{
+        max-width: 1050px;
+        height: auto;
+    }
+
     .ctn-preloader .animation-preloader .fadeInOut {
         height: 8em;
         width: 8em;
@@ -92,6 +97,12 @@
         margin-top: 2rem;
         text-align: center;
     }
+
+    .animation-preloader video{
+        max-width: 1050px;
+        height: auto;
+    }
+
 }
 
 @media (max-width:350px){
@@ -105,4 +116,10 @@
         margin-top: 2rem;
         text-align: center;
     }
+
+    .animation-preloader video{
+        max-width: 1050px;
+        height: auto;
+    }
+
 }
