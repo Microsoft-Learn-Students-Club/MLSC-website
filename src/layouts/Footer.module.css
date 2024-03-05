@@ -106,26 +106,30 @@
     }
 
     .footer_logo img {
-        width: 7rem;
-        height: 6.5rem;
+        width: 6rem;
+        height: 5.5rem;
+    }
+
+    .flex_li span{
+        font-size: 11px;
     }
 
     .footer_social_container {
         display: flex;
         justify-content: space-between;
-        gap: 5rem;
+        gap: 2.5rem;
         margin-bottom: 1rem;
     }
 
     .social_media {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .footer_contact {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 0.4;
         text-align:start;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
 
     .footer_email {
@@ -150,21 +154,27 @@
     .footer_logo img {
         width: 5rem;
         height: 4.5rem;
+        margin: auto;
+    }
+
+    .flex_li span{
+        font-size: 10px;
     }
 
     .footer_social_container {
         display: flex;
         justify-content: space-between;
-        gap: 5rem;
+        gap: 8rem;
         margin-bottom: 1rem;
     }
 
     .social_media {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer_contact {
-        font-size: 12px;
+        margin: 0;
+        font-size: 10px;
         line-height: 0.4;
         text-align: center;
     }

@@ -1,4 +1,3 @@
-import React from "react";
 import "../pages/Team.css";
 
 function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
@@ -25,7 +24,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
           <a
             target="_blank"
             className="flex items-center w-[1.5rem] h-[1.5rem] opacity-60 hover:opacity-100"
-            href={githubUrl}
+            href={githubUrl} rel="noreferrer"
           >
             <img
               width="98"
@@ -37,7 +36,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
           <a
             target="_blank"
             className="flex items-center w-[1.5rem] h-[1.5rem] opacity-60 hover:opacity-100"
-            href={linkedinUrl}
+            href={linkedinUrl} rel="noreferrer"
           >
             <img
               width="100"

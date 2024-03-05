@@ -130,7 +130,7 @@
 
     .nav_link {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .nav_link::before {
@@ -162,7 +162,7 @@
 
     .nav_link {
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav_link::before {
@@ -194,6 +194,7 @@
 
     .nav_link {
         text-align: center;
+        font-size: 16px;
     }
 
     .nav_link::before {

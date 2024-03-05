@@ -49,6 +49,13 @@
     }
 }
 
+@media (max-width:1280px){
+    .about_content{
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
 @media (max-width:1050px){
     .about_content_container{
         display: flex;
@@ -76,7 +83,7 @@
     }
 
     .about_content{
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
     }
 

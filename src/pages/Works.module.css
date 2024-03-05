@@ -45,7 +45,7 @@
     .btn{
         font-size: 14px;
         padding: .7em 1.2em;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .btn span{
