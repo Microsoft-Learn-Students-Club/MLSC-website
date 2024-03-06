@@ -46,7 +46,7 @@
     }
 
     .animation-preloader video{
-        max-width: 1050px;
+        max-width: max-content;
         height: auto;
     }
 
@@ -72,7 +72,7 @@
     }
 
     .animation-preloader video{
-        max-width: 1050px;
+        max-width: max-content;
         height: auto;
     }
 
@@ -99,7 +99,7 @@
     }
 
     .animation-preloader video{
-        max-width: 1050px;
+        max-width: max-content;
         height: auto;
     }
 
@@ -118,7 +118,7 @@
     }
 
     .animation-preloader video{
-        max-width: 1050px;
+        max-width: max-content;
         height: auto;
     }
 
