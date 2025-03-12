@@ -58,272 +58,262 @@
     }
   ],
 
-  "corporate":[
+  "corporate": [
       {
           "name": "Tej Harish More",
-          "imgSrc": "https://imgur.com/a/0ki7t6o",
+          "imgSrc": "https://i.imgur.com/c4yftec.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/tej-more/",
           "role": "Corporate Lead"
       },
       {
           "name": "KRISH MEHTA",
-          "imgSrc": "https://imgur.com/a/q6Kfk0L",
+          "imgSrc": "https://i.imgur.com/kXjxo0r.jpeg",
           "linkedinUrl": "www.linkedin.com/in/krish-mehta1",
           "role": "Corporate Lead"
       },
       {
           "name": "Tanzil Sayed",
-          "imgSrc": "https://imgur.com/a/YTK4f0u",
+          "imgSrc": "https://i.imgur.com/dfWXU6G.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/tanzil-sayed",
           "role": "Corporate Associate"
       },
       {
           "name": "Shreya Ganesh Wankhede",
-          "imgSrc": "https://imgur.com/a/XBOYwzn",
+          "imgSrc": "https://i.imgur.com/TphkkNy.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/shreya-wankhede-880308260",
           "role": "Corporate Associate"
       },
       {
           "name": "Tanishka Jayesh Das",
-          "imgSrc": "https://imgur.com/a/edLknDr",
+          "imgSrc": "https://i.imgur.com/G4Z1Lwu.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/tanishka-das-ce",
           "role": "Corporate Associate"
       },
       {
           "name": "Hardik Prakash Sanap",
-          "imgSrc": "https://imgur.com/a/pIdntQ3",
+          "imgSrc": "https://i.imgur.com/PlKZWJm.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/hardik-sanap-562814282",
           "role": "Corporate Associate"
       },
       {
           "name": "Shagun Upadhyay",
-          "imgSrc": "https://imgur.com/a/1pYMyyi",
+          "imgSrc": "https://i.imgur.com/O3XXhQY.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/shagun-upadhyay-459a4525b/",
           "role": "Corporate Associate"
       },
       {
           "name": "Tejashree Anand Karekar",
-          "imgSrc": "https://imgur.com/a/VeqkYLA",
+          "imgSrc": "https://i.imgur.com/p8qdgqK.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/tejashree-karekar-83bbbb257",
           "role": "Corporate Associate"
       },
       {
           "name": "PRISHA VAIBHAV PATIL",
-          "imgSrc": "https://imgur.com/a/tThu7BU",
+          "imgSrc": "https://i.imgur.com/xxFtUvH.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/prisha-patil-7a3627329",
           "role": "Corporate Coordinator"
       },
       {
           "name": "Sharvari Bhondekar",
-          "imgSrc": "https://imgur.com/a/XgfU2DJ",
+          "imgSrc": "https://i.imgur.com/E9RAnlf.png",
           "linkedinUrl": "linkedin.com/in/sharvari-bhondekar-872a7a282",
           "role": "Corporate Coordinator"
       },
       {
           "name": "Gayatri Sabat",
-          "imgSrc": "https://imgur.com/a/GHzQKlc",
+          "imgSrc": "https://i.imgur.com/Q0tArll.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/sabatgayatri",
           "role": "Corporate Coordinator"
       },
       {
           "name": "Aaditya Shivshankar Jauhari",
-          "imgSrc": "https://imgur.com/a/nBDoIas",
+          "imgSrc": "https://i.imgur.com/6mYXMBb.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/aaditya-jauhari",
           "role": "Corporate Coordinator"
       }
   ],
 
   "App": [
-      
-      {
-          "name": "Mahek Shamshuddin Mulla ",
-          "imgSrc": "https://imgur.com/a/BPPiMGk",
-          "linkedinUrl": "https://www.linkedin.com/in/mahek-mulla-655372280",
-          "role": "App Lead"
-      },
-      {
-          "name": "Amey Chaudhari",
-          "imgSrc": null,
-          "linkedinUrl": null,
-          "role": "App Lead"
-      },
-      {
-          "name": "Vaibhav Gangurde",
-          "imgSrc": "https://imgur.com/a/GvVBCN9",
-          "linkedinUrl": "https://in.linkedin.com/in/vaibhavgangurde",
-          "role": "Senior App Associate"
-      },
-      {
-          "name": "Gaurav Desale",
-          "imgSrc": "https://imgur.com/a/QvBWGUC",
-          "linkedinUrl": "https://www.linkedin.com/in/gaurav-desale-84885b250/",
-          "role": "DEV Associate"
-      },
-      {
-          "name": "Vivek Bargude",
-          "imgSrc": "https://imgur.com/a/ulXr4b7",
-          "linkedinUrl": "https://www.linkedin.com/in/vivek-bargude-76a420253/",
-          "role": "Dev Associate "
-      },
-      {
-          "name": "Borhade Shruti Jagdish ",
-          "imgSrc": "https://imgur.com/a/KuojPyD",
-          "linkedinUrl": "https://www.linkedin.com/in/shruti-borhade-50b4392a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "role": "App developer associate "
-      },
-      {
-          "name": "Atharva Chavan",
-          "imgSrc": "https://imgur.com/a/w6vf4FO",
-          "linkedinUrl": "www.linkedin.com/in/atharva-chavan1505",
-          "role": "Dev coordinator "
-      },
-      {
-          "name": "Vaidehi Raut ",
-          "imgSrc": "https://imgur.com/a/BscUCtr",
-          "linkedinUrl": "https://www.linkedin.com/in/vaidehi-raut-9563052b9",
-          "role": "Dev coordinator "
-      }
-      
-  ],
+    
+    {
+        "name": "Mahek Shamshuddin Mulla ",
+        "imgSrc": "https://i.imgur.com/NAFpy1K.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/mahek-mulla-655372280",
+        "role": "App Lead"
+    },
+    {
+        "name": "Amey Chaudhari",
+        "imgSrc": "https://i.imgur.com/7W7ion6.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/amey-chaudhari-1b1b3b1b1",
+        "role": "App Lead"
+    },
+    {
+        "name": "Vaibhav Gangurde",
+        "imgSrc": "https://i.imgur.com/qwf4s9y.jpeg",
+        "linkedinUrl": "https://in.linkedin.com/in/vaibhavgangurde",
+        "role": "Senior App Associate"
+    },
+    {
+        "name": "Gaurav Desale",
+        "imgSrc": "https://i.imgur.com/Gv2Hgxn.png",
+        "linkedinUrl": "https://www.linkedin.com/in/gaurav-desale-84885b250/",
+        "role": "DEV Associate"
+    },
+    {
+        "name": "Vivek Bargude",
+        "imgSrc": "https://i.imgur.com/THRd5TW.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/vivek-bargude-76a420253/",
+        "role": "Dev Associate "
+    },
+    {
+        "name": "Borhade Shruti Jagdish ",
+        "imgSrc": "https://imgur.com/a/KuojPyD",
+        "linkedinUrl": "https://www.linkedin.com/in/shruti-borhade-50b4392a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "App developer associate "
+    },
+    {
+        "name": "Atharva Chavan",
+        "imgSrc": "https://i.imgur.com/pIparo4.jpeg",
+        "linkedinUrl": "www.linkedin.com/in/atharva-chavan1505",
+        "role": "Dev coordinator "
+    },
+    {
+        "name": "Vaidehi Raut ",
+        "imgSrc": "https://i.imgur.com/vc8zo1Q.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/vaidehi-raut-9563052b9",
+        "role": "Dev coordinator "
+    } 
+],
 
 
   "ML": [
     {
-      "name": "Kunal Chaudhari",
-      "imgSrc": "https://i.imgur.com/u1F6rWh.jpeg",
-      "githubUrl": "https://github.com/kc-codes",
-      "linkedinUrl": "https://www.linkedin.com/in/kunal23",
-      "role": "Dev Associate"
+        "name": "Sakshi Karande",
+        "imgSrc": "https://i.imgur.com/krR3qNP.jpeg",
+        "linkedinUrl": "www.linkedin.com/in/sakshi-karande",
+        "role": "AI/ML Lead"
     },
     {
-      "name": "Dhrub Das",
-      "imgSrc": "https://i.imgur.com/uuBFLT6.jpeg",
-      "githubUrl": "https://github.com/ddas2707",
-      "linkedinUrl": "https://www.linkedin.com/in/dhrub-das-877659248",
-      "role": "Dev Associate"
+        "name": "Sahil Haresh Kulabkar ",
+        "imgSrc": "https://i.imgur.com/9HHBEhh.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/sahil-kulabkar-849131245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "AI/ML Lead"
     },
     {
-      "name": "Sakshi Karande",
-      "imgSrc": "https://i.imgur.com/V2QIhwW.jpeg",
-      "githubUrl": "https://github.com/sakshikarande26",
-      "linkedinUrl": "https://www.linkedin.com/in/sakshi-karande-b77a93230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "role": "Dev Associate"
+        "name": "Ayush Pritam Mayekar ",
+        "imgSrc": "https://i.imgur.com/HsL69pB.png",
+        "linkedinUrl": "https://www.linkedin.com/in/ayush-mayekar-b9b883284",
+        "role": "Treasurer "
     },
     {
-      "name": "Ayush Dahiwale",
-      "imgSrc": "https://i.imgur.com/7ybfqnk.jpeg",
-      "githubUrl": "https://github.com/AyushD95",
-      "linkedinUrl": "https://www.linkedin.com/in/ayushdahiwale",
-      "role": "Dev Coordinator"
+        "name": "Soham Munesh Save ",
+        "imgSrc": "https://i.imgur.com/hMnmjMO.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/soham-save-0b52bb27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Dev Associate"
     },
     {
-      "name": "Veer Jain",
-      "imgSrc": "https://i.imgur.com/fdT7R4P.jpeg",
-      "githubUrl": "https://github.com/VeerJain09",
-      "linkedinUrl": "https://www.linkedin.com/in/veer-jain-40632425b/",
-      "role": "Dev Coordinator"
+        "name": "Yash Vilas Mayekar",
+        "imgSrc": "https://i.imgur.com/QHcfnEp.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/yashmayekar21",
+        "role": "Dev Associate"
     },
     {
-      "name": "Ayush Mayekar",
-      "imgSrc": "https://i.imgur.com/GxfUqBr.jpeg",
-      "githubUrl": "https://github.com/AyushMayekar",
-      "linkedinUrl": "https://www.linkedin.com/in/ayush-mayekar-b9b883284/",
-      "role": "Dev Coordinator"
+        "name": "Afnan Esak Pathan",
+        "imgSrc": "https://i.imgur.com/oxZiEKD.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/afnan-pathan-838866269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Dev associate "
     },
     {
-      "name": "Afnan Pathan",
-      "imgSrc": "https://i.imgur.com/BGj0S6a.jpeg",
-      "githubUrl": "https://github.com/Afnanpathan2004",
-      "linkedinUrl": "https://www.linkedin.com/in/afnan-pathan-838866269",
-      "role": "Dev Coordinator"
+        "name": "Arnav Gupta",
+        "imgSrc": "https://i.imgur.com/XtDPAfX.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/arnav-gupta-dsml?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        "role": "Dev Coordinator"
     },
     {
-      "name": "Jayvin Parmar",
-      "imgSrc": "https://i.imgur.com/kYDpd6m.jpeg",
-      "githubUrl": "https://github.com/Jayvin21",
-      "linkedinUrl": "https://www.linkedin.com/in/jayvin-parmar-7ab344295/",
-      "role": "Dev Coordinator"
+        "name": "Aman Mehtar",
+        "imgSrc": "https://i.imgur.com/F4kkT3r.png",
+        "linkedinUrl": "https://www.linkedin.com/in/aman-mehtar",
+        "role": "Dev Coordinator"
     },
     {
-      "name": "Yash Mayekar",
-      "imgSrc": "https://i.imgur.com/ZMp6ZGY.jpeg",
-      "githubUrl": "https://github.com/YashMayekar",
-      "linkedinUrl": "https://www.linkedin.com/in/yash-mayekar-87806024b/",
-      "role": "Dev Coordinator"
+        "name": "Pranavakumar Murali",
+        "imgSrc": "https://i.imgur.com/gaIt8yL.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/pranavakumar-murali-786457290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Dev Coordinator"
     },
     {
-      "name": "Yash Mohadikar",
-      "imgSrc": "https://i.imgur.com/BOukBtY.jpeg",
-      "githubUrl": "https://github.com/Yash222153107",
-      "linkedinUrl": "https://www.linkedin.com/in/yash-mohadikar-79136825b/",
-      "role": "Dev Coordinator"
+        "name": "Viraj Mukesh Bhatia ",
+        "imgSrc": "https://i.imgur.com/AM1GTCA.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/viraj--bhatia/",
+        "role": "Dev coordinator"
     }
-  ],
+],
 
   "Dev": [
-      {
-          "name": "Vedant Mahesh Jagdale",
-          "imgSrc": "https://i.imgur.com/jXaVgSI.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/vedant-jagdale-5234ab260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "role": "Web Lead"
-      },
-      {
-          "name": "Vrusharth Nirmal",
-          "imgSrc": null,
-          "linkedinUrl": "https://www.linkedin.com/in/vrusharth-nirmal/",
-          "role": "Web Lead"
-      },
-      {
-          "name": "Yash Chetan Chavan",
-          "imgSrc": "https://i.imgur.com/78hCLuJ.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/YashChavanWeb/",
-          "role": "Dev Associate"
-      },
-      {
-          "name": "Ayush Wakpaijan",
-          "imgSrc": "https://i.imgur.com/obx06Dv.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/ayush-wakpaijan-76542a239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "role": "Dev Associate"
-      },
-      {
-          "name": "Shreeyash Jadhav",
-          "imgSrc": "https://i.imgur.com/ppcSy9L.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/shreeyash-jadhav-658668256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "role": "Web Dev Associate"
-      },
-      {
-          "name": "Sara Gorule",
-          "imgSrc": "https://i.imgur.com/iaa9T4n.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/sara-gorule",
-          "role": "Dev Coordinator"
-      },
-      {
-          "name": "Krisha Chikka",
-          "imgSrc": "https://i.imgur.com/hPWXnvf.png",
-          "linkedinUrl": "https://www.linkedin.com/in/krisha-chikka-694121257",
-          "role": "Dev Coordinator"
-      },
-      {
-          "name": "Rashid Ejaz Khan",
-          "imgSrc": "https://i.imgur.com/CNMD1Lz.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/rashid-ejaz-khan",
-          "role": "Dev Coordinator"
-      },
-      {
-          "name": "Kumud Mohan Zimal",
-          "imgSrc": "https://i.imgur.com/6L8Aet7.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/kumud-zimal-b1579b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "role": "Development Coordinator"
-      },
-      {
-          "name": "Chaitanya Rane",
-          "imgSrc": "https://i.imgur.com/DbtB2EL.jpeg",
-          "linkedinUrl": "https://www.linkedin.com/in/chaitanya-rane-aaba03332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "role": "Dev Co-ordinator"
-      }
-  ],
+    {
+        "name": "Vedant Mahesh Jagdale",
+        "imgSrc": "https://i.imgur.com/jXaVgSI.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/vedant-jagdale-5234ab260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Web Lead"
+    },
+    {
+        "name": "Vrusharth Nirmal",
+        "imgSrc": null,
+        "linkedinUrl": "https://www.linkedin.com/in/vrusharth-nirmal/",
+        "role": "Web Lead"
+    },
+    {
+        "name": "Yash Chetan Chavan",
+        "imgSrc": "https://i.imgur.com/78hCLuJ.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/YashChavanWeb/",
+        "role": "Dev Associate"
+    },
+    {
+        "name": "Ayush Wakpaijan",
+        "imgSrc": "https://i.imgur.com/obx06Dv.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/ayush-wakpaijan-76542a239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Dev Associate"
+    },
+    {
+        "name": "Shreeyash Jadhav",
+        "imgSrc": "https://i.imgur.com/ppcSy9L.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/shreeyash-jadhav-658668256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Web Dev Associate"
+    },
+    {
+        "name": "Sara Vivekanand Gorule",
+        "imgSrc": "https://imgur.com/a/WRgwi7Rhttps://i.imgur.com/iaa9T4n.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/sara-gorule",
+        "role": "Dev Coordinator - Web"
+    },
+    {
+        "name": "Krisha Chikka",
+        "imgSrc": "https://i.imgur.com/hPWXnvf.png",
+        "linkedinUrl": "https://www.linkedin.com/in/krisha-chikka-694121257",
+        "role": "Dev Coordinator"
+    },
+    {
+        "name": "Rashid Ejaz Khan",
+        "imgSrc": "https://i.imgur.com/CNMD1Lz.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/rashid-ejaz-khan",
+        "role": "Dev Coordinator"
+    },
+    {
+        "name": "Kumud Mohan Zimal",
+        "imgSrc": "https://i.imgur.com/6L8Aet7.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/kumud-zimal-b1579b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Development Coordinator"
+    },
+    {
+        "name": "Chaitanya Rane",
+        "imgSrc": "https://i.imgur.com/DbtB2EL.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/chaitanya-rane-aaba03332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "role": "Dev Co-ordinator"
+    }
+],
 
-  "Outreach": [
+  "Outreach": 
+  [
       {
           "name": "Pranav Shetty",
           "imgSrc": "https://imgur.com/a/LdXvVRV",
@@ -332,19 +322,19 @@
       },
       {
           "name": "Dnyanesh B. Panchal",
-          "imgSrc": "https://imgur.com/a/A86Oll9",
+          "imgSrc": "https://i.imgur.com/cZFlcfw.png",
           "linkedinUrl": "https://www.linkedin.com/in/dnyanesh-panchal/",
           "role": "Outreach Lead"
       },
       {
           "name": "DHIR VIJAY SURTI",
-          "imgSrc": "https://imgur.com/a/Ge6YkOI",
+          "imgSrc": "https://i.imgur.com/1K4B6zr.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/dhir-surti?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "role": "Outreach Senior Associate"
       },
       {
           "name": "Aakanksha Santosh Chaudhari",
-          "imgSrc": "https://imgur.com/a/PbLTtkW",
+          "imgSrc": "https://i.imgur.com/d70d8pJ.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/aakanksha-c9234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           "role": "Outreach Senior Associate"
       },
@@ -356,7 +346,7 @@
       },
       {
           "name": "Aaryan Chandrakant Gole",
-          "imgSrc": "https://imgur.com/a/xWQIiTp",
+          "imgSrc": "https://i.imgur.com/ZI6pPce.png",
           "linkedinUrl": "https://www.linkedin.com/in/aaryan-gole",
           "role": "Outreach Associate"
       },
