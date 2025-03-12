@@ -1,60 +1,16 @@
 {
   "lead": [
     {
-      "name": "Rishabh Tripathi",
+      "name": "Parth Baradia",
       "imgSrc": "https://i.imgur.com/wleZQyT.png",
-      "githubUrl": "https://github.com/Rishabh-Tripathi1",
       "linkedinUrl": "https://www.linkedin.com/in/rishabh--tripathi/",
       "role": "MLSA - Club Lead"
     },
     {
-      "name": "Sanika Patil",
-      "imgSrc": "https://i.imgur.com/Mf9vXR9.jpg",
-      "githubUrl": "https://github.com/sanikapatil06",
-      "linkedinUrl": "https://www.linkedin.com/in/sanika--patil/",
+      "name": "Vishal Mane",
+      "imgSrc": "https://i.imgur.com/btIDWzR.jpeg",
+      "linkedinUrl": "https://www.linkedin.com/in/vishalmane30/",
       "role": "Associate Club Lead"
-    },
-    {
-      "name": "Aditya Trivedi",
-      "imgSrc": "https://i.imgur.com/yWrokp4.png",
-      "githubUrl": "https://github.com/Yuvadi29",
-      "linkedinUrl": "https://www.linkedin.com/in/aditya-trivedi-b99586211/",
-      "role": "Corporate Lead"
-    },
-    {
-      "name": "Hrushikesh Shetty",
-      "imgSrc": "https://i.imgur.com/TS0SCd8.jpeg",
-      "githubUrl": "https://github.com/hrushikesh070902",
-      "linkedinUrl": "https://www.linkedin.com/in/hrushikeshshetty",
-      "role": "Corporate Lead"
-    },
-    {
-      "name": "Om Achrekar",
-      "imgSrc": "https://i.imgur.com/MvgByQV.jpeg",
-      "githubUrl": "https://github.com/achrekarom12",
-      "linkedinUrl": "https://www.linkedin.com/in/achrekarom/",
-      "role": "Dev Lead"
-    },
-    {
-      "name": "Karan Patra",
-      "imgSrc": "https://i.imgur.com/9K2MjP2.png",
-      "githubUrl": "https://github.com/KaranPatra",
-      "linkedinUrl": "https://www.linkedin.com/in/karan-patra/",
-      "role": "Dev Lead"
-    },
-    {
-      "name": "Nikita Mundaye",
-      "imgSrc": "https://i.imgur.com/7W7ion6.jpeg",
-      "githubUrl": "https://github.com/nikim178",
-      "linkedinUrl": "https://www.linkedin.com/in/nikim178/",
-      "role": "Outreach Lead"
-    },
-    {
-      "name": "Himadri Manna",
-      "imgSrc": "https://i.imgur.com/JAbxQPL.jpeg",
-      "githubUrl": "https://github.com/Himadrimanna",
-      "linkedinUrl": "linkedin.com/in/himadri-manna-902964rd/",
-      "role": "Outreach Lead"
     }
   ],
 
@@ -182,7 +138,7 @@
         "imgSrc": "https://i.imgur.com/vc8zo1Q.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/vaidehi-raut-9563052b9",
         "role": "Dev coordinator "
-    } 
+    }
 ],
 
 
@@ -282,7 +238,7 @@
     },
     {
         "name": "Sara Vivekanand Gorule",
-        "imgSrc": "https://imgur.com/a/WRgwi7Rhttps://i.imgur.com/iaa9T4n.jpeg",
+        "imgSrc": "https://i.imgur.com/iaa9T4n.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/sara-gorule",
         "role": "Dev Coordinator - Web"
     },
@@ -293,7 +249,7 @@
         "role": "Dev Coordinator"
     },
     {
-        "name": "Rashid Ejaz Khan",
+        "name": "Rashid Khan",
         "imgSrc": "https://i.imgur.com/CNMD1Lz.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/rashid-ejaz-khan",
         "role": "Dev Coordinator"
