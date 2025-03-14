@@ -1,9 +1,9 @@
 {
   "lead": [
     {
-      "name": "Parth Baradia",
-      "imgSrc": "https://i.imgur.com/wleZQyT.png",
-      "linkedinUrl": "https://www.linkedin.com/in/rishabh--tripathi/",
+      "name": "Paarth Baradia",
+      "imgSrc": "https://i.imgur.com/SLY1OkT.jpeg",
+      "linkedinUrl": "https://www.linkedin.com/in/paarth-baradia/",
       "role": "MLSA - Club Lead"
     },
     {
@@ -29,7 +29,7 @@
       },
       {
           "name": "Tanzil Sayed",
-          "imgSrc": "https://i.imgur.com/dfWXU6G.jpeg",
+          "imgSrc": "https://i.imgur.com/bCtYngf.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/tanzil-sayed",
           "role": "Corporate Associate"
       },
@@ -123,19 +123,19 @@
     },
     {
         "name": "Borhade Shruti Jagdish ",
-        "imgSrc": "https://imgur.com/a/KuojPyD",
+        "imgSrc": "https://i.imgur.com/8Gak3Il.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/shruti-borhade-50b4392a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "role": "App developer associate "
     },
     {
         "name": "Atharva Chavan",
-        "imgSrc": "https://i.imgur.com/pIparo4.jpeg",
+        "imgSrc": "https://i.imgur.com/upp23IX.jpeg",
         "linkedinUrl": "www.linkedin.com/in/atharva-chavan1505",
         "role": "Dev coordinator "
     },
     {
         "name": "Vaidehi Raut ",
-        "imgSrc": "https://i.imgur.com/vc8zo1Q.jpeg",
+        "imgSrc": "https://i.imgur.com/QYDlaSr.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/vaidehi-raut-9563052b9",
         "role": "Dev coordinator "
     }
@@ -220,7 +220,7 @@
     },
     {
         "name": "Vrusharth Nirmal",
-        "imgSrc": null,
+        "imgSrc": "https://i.imgur.com/NV5gxhd.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/vrusharth-nirmal/",
         "role": "Web Lead"
     },
@@ -278,7 +278,7 @@
   [
       {
           "name": "Pranav Shetty",
-          "imgSrc": "https://imgur.com/a/LdXvVRV",
+          "imgSrc": "https://i.imgur.com/8R1gQ2W.jpeg",
           "linkedinUrl": "https://linkedin.com/in/pranav-shetty0704/",
           "role": "Outreach Lead"
       },
@@ -302,7 +302,7 @@
       },
       {
           "name": "Siddharth Arvind Bagkar",
-          "imgSrc": "https://imgur.com/a/sG8OlTA",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/siddharth-bagkar-70b456265",
           "role": "Outreach Senior Associate"
       },
@@ -314,55 +314,55 @@
       },
       {
           "name": "Prathamesh Pawar",
-          "imgSrc": "https://imgur.com/a/FWAlnfp",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/prathamesh-pawar-b246b5269",
           "role": "Outreach Associate"
       },
       {
           "name": "Neel Mistry",
-          "imgSrc": "https://imgur.com/a/TgrmBOx",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/neel-mistry-303b9725a",
           "role": "Outreach Associate"
       },
       {
           "name": "Pratik Vasant Bhoir",
-          "imgSrc": "https://imgur.com/a/OAPayOh",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/pratik-bhoir-06b915243",
           "role": "Outreach Associate"
       },
       {
           "name": "Aryan Girishkumar Soni",
-          "imgSrc": "https://imgur.com/a/TPyHVg7",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/aryan-soni-195122244",
           "role": "Outreach Associate"
       },
       {
           "name": "Krishiv Ramesh Gupta",
-          "imgSrc": "https://imgur.com/a/JVq7ocO",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/krishiv-gupta-501b2b256",
           "role": "Outreach Associate"
       },
       {
           "name": "Jayesh Pradip Gupta",
-          "imgSrc": "https://imgur.com/a/AUmqnlB",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/jayesh-gupta-30357b25a",
           "role": "Outreach Associate"
       },
       {
           "name": "Aakanksha Amol Ratate",
-          "imgSrc": "https://imgur.com/a/IRlDlJy",
+          "imgSrc": "https://i.imgur.com/bsmjErQ.jpeg",
           "linkedinUrl": "https://www.linkedin.com/in/aakanksha-ratate-85b750216",
           "role": "Outreach Coordinator"
       },
       {
           "name": "Harshdeep Gurnani",
-          "imgSrc": "https://imgur.com/a/JkOzLZJ",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/harshdeep-gurnani-77862321a",
           "role": "Outreach Coordinator"
       },
       {
           "name": "Chaitanya Jagdish Kadu",
-          "imgSrc": "https://imgur.com/a/qHp3Hzq",
+          "imgSrc": "./src/assets/mlsclogo.png",
           "linkedinUrl": "https://www.linkedin.com/in/chaitanya-kadu/",
           "role": "Outreach Coordinator"
       }
