@@ -1,6 +1,7 @@
 {
   "lead": [
     {
+<<<<<<< HEAD
       "name": "Paarth Baradia",
       "imgSrc": "https://i.imgur.com/SLY1OkT.jpeg",
       "linkedinUrl": "https://www.linkedin.com/in/paarth-baradia/",
@@ -10,11 +11,25 @@
       "name": "Vishal Mane",
       "imgSrc": "https://i.imgur.com/btIDWzR.jpeg",
       "linkedinUrl": "https://www.linkedin.com/in/vishalmane30/",
+=======
+      "name": "Rishabh Tripathi",
+      "imgSrc": "//imgur.com/a/YTK4f0u",
+      "githubUrl": "https://github.com/Rishabh-Tripathi1",
+      "linkedinUrl": "https://www.linkedin.com/in/rishabh--tripathi/",
+      "role": "MLSA - Club Lead"
+    },
+    {
+      "name": "Sanika Patil",
+      "imgSrc": "https://imgur.com/a/YTK4f0u",
+      "githubUrl": "https://github.com/sanikapatil06",
+      "linkedinUrl": "https://www.linkedin.com/in/sanika--patil/",
+>>>>>>> 2436ccb (Fixed repository issues and removed nested repo)
       "role": "Associate Club Lead"
     }
   ],
 
   "corporate": [
+<<<<<<< HEAD
       {
           "name": "Tej Harish More",
           "imgSrc": "https://i.imgur.com/c4yftec.jpeg",
@@ -87,6 +102,83 @@
           "linkedinUrl": "https://www.linkedin.com/in/aaditya-jauhari",
           "role": "Corporate Coordinator"
       }
+=======
+    [
+      {
+        "name": "PRISHA VAIBHAV PATIL",
+        "role": "Corporate Co-ordinator",
+        "imgSrc": "https://imgur.com/a/tThu7BU",
+        "linkedinUrl": "https://www.linkedin.com/in/prisha-patil-7a3627329"
+      },
+      {
+        "name": "Sharvari Bhondekar",
+        "role": "Corporate Coordinator",
+        "imgSrc": "https://imgur.com/a/XgfU2DJ",
+        "linkedinUrl": "linkedin.com/in/sharvari-bhondekar-872a7a282"
+      },
+      {
+        "name": "KRISH MEHTA",
+        "role": "Corporate Lead",
+        "imgSrc": "https://imgur.com/a/q6Kfk0L",
+        "linkedinUrl": "www.linkedin.com/in/krish-mehta1"
+      },
+      {
+        "name": "Gayatri Sabat",
+        "role": "Corporate Coordinator",
+        "imgSrc": "https://imgur.com/a/GHzQKlc",
+        "linkedinUrl": "https://www.linkedin.com/in/sabatgayatri"
+      },
+      {
+        "name": "Tanzil Sayed",
+        "role": "Corporate Associate",
+        "imgSrc": "https://imgur.com/a/YTK4f0u",
+        "linkedinUrl": "https://www.linkedin.com/in/tanzil-sayed"
+      },
+      {
+        "name": "Aaditya Shivshankar Jauhari",
+        "role": "Corporate Coordinator",
+        "imgSrc": "https://imgur.com/a/nBDoIas",
+        "linkedinUrl": "https://www.linkedin.com/in/aaditya-jauhari"
+      },
+      {
+        "name": "Shreya Ganesh Wankhede",
+        "role": "Corporate Associate",
+        "imgSrc": "https://imgur.com/a/XBOYwzn",
+        "linkedinUrl": "https://www.linkedin.com/in/shreya-wankhede-880308260"
+      },
+      {
+        "name": "Tej Harish More",
+        "role": "Corporate Lead",
+        "imgSrc": "https://imgur.com/a/0ki7t6o",
+        "linkedinUrl": "https://www.linkedin.com/in/tej-more/"
+      },
+      {
+        "name": "Tanishka Jayesh Das",
+        "role": "Corporate Associate",
+        "imgSrc": "https://imgur.com/a/edLknDr",
+        "linkedinUrl": "https://www.linkedin.com/in/tanishka-das-ce"
+      },
+      {
+        "name": "Hardik Prakash Sanap",
+        "role": "Corporate Associate",
+        "imgSrc": "https://imgur.com/a/pIdntQ3",
+        "linkedinUrl": "https://www.linkedin.com/in/hardik-sanap-562814282"
+      },
+      {
+        "name": "Shagun Upadhyay",
+        "role": "Corporate Associate",
+        "imgSrc": "https://imgur.com/a/1pYMyyi",
+        "linkedinUrl": "https://www.linkedin.com/in/shagun-upadhyay-459a4525b/"
+      },
+      {
+        "name": "Tejashree Anand Karekar",
+        "role": "Corporate Associate",
+        "imgSrc": "https://imgur.com/a/VeqkYLA",
+        "linkedinUrl": "https://www.linkedin.com/in/tejashree-karekar-83bbbb257"
+      }
+    ]
+    
+>>>>>>> 2436ccb (Fixed repository issues and removed nested repo)
   ],
 
   "App": [

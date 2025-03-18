@@ -39,7 +39,7 @@ const Navbar = () => {
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/">Home</NavLink></li>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/team">Team</NavLink></li>
             <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/works">Works</NavLink></li>
-            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/leaderboard">Leaderboard</NavLink></li>
+            <li className={`${styles.nav_link} | ${styles.nav_link_ltr}`} onClick={toggleMenu}><NavLink to="/Projects">Projects</NavLink></li>
           </ul>
         </div>
       </nav>

@@ -54,20 +54,42 @@ const Events = ({count}) => {
       ],
     },
     {
-      title: "Fundamentally Azure Cloud Skill Challenge",
-      imgSrc: azureEventImg,
-      description: `In the Azure Fundamentals Challenge by Microsoft Learn Students Club, beginners gained 
-      essential Azure knowledge, receiving certificates and exclusive Skill Badges. Some also 
-      earned rewards like a three-month Xbox/PC Game Pass Ultimate and a twelve-month 
-      LinkedIn Premium Voucher. Congratulations to all for embracing the challenge and unlocking 
-      Azure's potential!`,
+      title: "Git Going",
+      Speaker: "Club leads",
+      imgSrc: "https://i.imgur.com/S84VLt8.jpeg",
+      description: ` A hands-on workshop where students gained practical experience with Git commands, version control, and collaborative workflows.
+They learned how to efficiently manage code repositories, track changes, and resolve merge conflicts in real-world projects.`,
       info: [
         { label: "Organizing People", value: 8 },
-        { label: "Participants", value: 221 },
-        { label: "Date and Time", value: `26th Sept to 17th Oct 2023, 9 AM` },
-        { label: "Event Span", value: `22 days`  },
+        { label: "Participants", value: 171 },
+        { label: "Date and Time", value: `20th Feb, 11:30 AM` },
+        { label: "Event Span", value: `1 day`  },
       ],
     },
+    {
+      title: "Mission Career Seminar",
+      Speaker: "Mr Gauam Umashankar",
+      imgSrc: "https://i.imgur.com/4mAKREa.jpeg",
+      description: ` The Career Guidance Seminar by Mission Career provided students with a valuable opportunity to gain insights, guidance, and strategies to advance their careers. By leveraging the expertise of MissionCareer, attendees were equipped with the tools and knowledge necessary to make informed decisions and pursue their career goals with confidence.`,
+      info: [
+        { label: "Organizing People", value: 8 },
+        { label: "Participants", value: 171 },
+        { label: "Date and Time", value: `20th Feb, 11:30 AM` },
+        { label: "Event Span", value: `1 day`  },
+      ],
+    },
+     {
+          title: "Product showcase challenge",
+          Speaker: "",
+          imgSrc: "https://i.imgur.com/989R6rL.jpeg",
+          description: ` The VCET Product Showcase, organized by the Microsoft Learn Student Club, was a successful platform for showcasing innovative, Microsoft-centric projects and enhancing the technical skills of students. By promoting teamwork, creativity, and mentorship, the event aligned with MLSC’s vision to empower students and prepare them for future career opportunities in the tech industry.`,
+          info: [
+            { label: "Organizing People", value: 8 },
+            { label: "Participants", value: 171 },
+            { label: "Date and Time", value: `20th Feb, 11:30 AM` },
+            { label: "Event Span", value: `1 day`  },
+          ],
+        },
   ];
 
   return (

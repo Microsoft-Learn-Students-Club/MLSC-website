@@ -1,0 +1,17 @@
+{
+  "webDev": [
+    { "name": "MLSC VCET official website", "imgSrc": "https://i.imgur.com/pNA4KkM.jpeg", "category": "Hosted website for MLSC-VCET which showcased club activities" },
+    { "name": "Grow educators", "imgSrc": "https://i.imgur.com/C1j66K8.png", "category": "Created a website for a coaching classes which digitalized their platform" },
+    { "name": "Coherence Hackathon website", "imgSrc": "https://i.imgur.com/9kSpQwG.jpeg", "category": "Coherence, Hackathon conducted by MLSC created a website for the same" },
+    { "name": "Aspiring celebrations", "imgSrc": "https://i.imgur.com/3AhWQXw.jpeg", "category": "Integrated Automated tally integration feature on their existing platform banquet easy" }
+  ],
+  "aiMl": [
+    { "name": "Feedback", "imgSrc": "https://i.imgur.com/REzAgtv.jpeg", "category": "Built and deployed an AI chatbot to answer participant queries on the MLSC website." },
+    { "name": "Aspiring celebrationss", "imgSrc": "https://i.imgur.com/sCgDtum.jpeg", "category": "1.  Developed and deployed an enterprise-level OCR solution for Merchant Navy documents using microservices and Docker on a Linux server." },
+    { "name": "AI Chatbot", "imgSrc": "/images/dataanalysis.jpg", "category": "Devloped an AI Chatbot to solve the FAQs and Questions of the Hackathon Participants" }
+  ],
+  "app": [
+    { "name": "Grow educators APP", "imgSrc": "https://i.imgur.com/C1j66K8.png", "category": "Created a App for a coaching classes which digitalized their platform" },
+    { "name": "Aspiring celebrations APP", "imgSrc": "https://i.imgur.com/IkrhN0n.jpeg", "category": "Developed an Property Managment System App for their exsisting software " }
+  ]
+}
