@@ -161,12 +161,14 @@ const Team = () => {
             <div className="lg:hidden block sticky top-[150px] sm:text-base text-2xl"></div>
           </div>
           <div className="grid col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 sm:mt-0 z-50">
-            <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3">
-              <div id="LEADS" className="sm:flex flex lg:py-0 sm:py-10 py-4">
-                <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
+          <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   LEADS
                 </h2>
-              </div>
+            <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3">
+          
+              {/* <div id="LEADS" className="sm:flex flex lg:py-0 sm:py-10 py-4">
+               
+             </div> */}
               {renderCards("lead")}
               <div
                 id="Corporate"
@@ -184,6 +186,8 @@ const Team = () => {
                 </h2>
               </div>
               {renderCards("App")}
+              <div></div>
+              <div></div>
               <div id="ML" className="sm:flex flex lg:py-0 sm:py-10 py-4">
                 <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   ML
@@ -198,7 +202,7 @@ const Team = () => {
               </div>
               {renderCards("Dev")}
               <div></div>
-              <div></div>
+          
               <div
                 id="Outreach"
                 className="sm:flex flex lg:py-0 sm:py-10 py-4"
