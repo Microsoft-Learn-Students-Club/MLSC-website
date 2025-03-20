@@ -21,7 +21,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
         </h2>
         <h3 className="text-grey">{role}</h3>
         <div className="flex gap-2 justify-end mt-auto pt-2">
-          <a
+          {/* <a
             target="_blank"
             className="flex items-center w-[1.5rem] h-[1.5rem] opacity-60 hover:opacity-100"
             href={githubUrl} rel="noreferrer"
@@ -32,7 +32,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
               src="https://img.icons8.com/material-outlined/24/github.png"
               alt="github"
             />
-          </a>
+          </a> */}
           <a
             target="_blank"
             className="flex items-center w-[1.5rem] h-[1.5rem] opacity-60 hover:opacity-100"
