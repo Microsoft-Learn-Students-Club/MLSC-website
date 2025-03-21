@@ -174,12 +174,6 @@
         "role": "AI/ML Lead"
     },
     {
-        "name": "Soham Munesh Save ",
-        "imgSrc": "https://i.imgur.com/hMnmjMO.jpeg",
-        "linkedinUrl": "https://www.linkedin.com/in/soham-save-0b52bb27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "role": "Aiml Associate"
-    },
-    {
         "name": "Yash Vilas Mayekar",
         "imgSrc": "https://i.imgur.com/QHcfnEp.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/yashmayekar21",
@@ -195,6 +189,12 @@
         "name": "Arnav Gupta",
         "imgSrc": "https://i.imgur.com/XtDPAfX.jpeg",
         "linkedinUrl": "https://www.linkedin.com/in/arnav-gupta-dsml?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        "role": "Aiml Coordinator"
+    },
+    {
+        "name": "Soham Munesh Save ",
+        "imgSrc": "https://i.imgur.com/hMnmjMO.jpeg",
+        "linkedinUrl": "https://www.linkedin.com/in/soham-save-0b52bb27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "role": "Aiml Coordinator"
     },
     {
