@@ -12,6 +12,7 @@
     animation: drop-in 1200ms ease 500ms backwards;
     padding-bottom: 9rem;
     justify-content: space-evenly;
+    display: flex;
 }
 
 .about_content {

@@ -3,6 +3,7 @@ import styles from './CounterUp.module.css';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import { Link } from 'react-router-dom';
+import ScrambledText from '../blocks/TextAnimations/ScrambledText/ScrambledText';
 
 const CounterUp = () => {
 
@@ -14,15 +15,19 @@ const CounterUp = () => {
                 <h1 className={styles.title}>Our Works</h1>
                 <div className={`flex_center | ${styles.work_container}`}>
                     <div className={styles.right_content}>
-                        <p>The Microsoft Learn Students Club (MLSC) serves as a dynamic hub for student learning and
-                            collaboration. Through workshops like React JS Mastery and Azure Fundamentals Challenge,
-                            MLSC empowers students with hands-on experiences and expert guidance. Participants
-                            receive completion certificates, skill badges, and access to premium resources. MLSC&#39;s
-                            commitment extends to cultivating an environment for thriving learning journeys, focusing
-                            on emerging technologies, skill development, and networking. The impactful workshops
-                            equip participants with practical knowledge, facilitating their navigation in the ever-evolving
-                            tech landscape. Join MLSC for a journey of continuous learning, collaboration, and
-                            excellence.</p>
+                     <ScrambledText
+                      radius={100} duration={1.2} speed={0.5} scrambleChars=".:"
+                     >
+                        The Microsoft Learn Students Club (MLSC) serves as a dynamic hub for student learning and
+                        collaboration. Through workshops like React JS Mastery and Azure Fundamentals Challenge,
+                        MLSC empowers students with hands-on experiences and expert guidance. Participants
+                        receive completion certificates, skill badges, and access to premium resources. MLSC&#39;s
+                        commitment extends to cultivating an environment for thriving learning journeys, focusing
+                        on emerging technologies, skill development, and networking. The impactful workshops
+                        equip participants with practical knowledge, facilitating their navigation in the ever-evolving
+                        tech landscape. Join MLSC for a journey of continuous learning, collaboration, and
+                        excellence.
+                     </ScrambledText>
                     </div>
                     <div className={`flex_center | ${styles.left_content}`}>
                         <div className={`flex_center | ${styles.counter_page_container}`}>

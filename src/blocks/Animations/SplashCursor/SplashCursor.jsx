@@ -936,8 +936,8 @@ function SplashCursor({
 
     function clickSplat(pointer) {
       const color = generateColor();
-      color.r *= 10.0;
-      color.g *= 10.0;
+      color.r *= 0.0;
+      color.g *= 0.0;
       color.b *= 10.0;
       let dx = 10 * (Math.random() - 0.5);
       let dy = 30 * (Math.random() - 0.5);
