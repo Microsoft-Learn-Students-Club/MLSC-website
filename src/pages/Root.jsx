@@ -3,6 +3,7 @@ import Navbar from "../layouts/Navbar";
 import { useEffect, useState } from "react";
 import ScrollToTop from "../components/ScrollToTop";
 import bgvideo from "../assets/mlsc.mp4";
+import SplashCursor from '../blocks/Animations/SplashCursor/SplashCursor';
 
 const Root = () => {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ const Root = () => {
         </section>
       ) : (
         <>
+          <SplashCursor />
           <ScrollToTop />
           <Navbar />
           <Outlet />
