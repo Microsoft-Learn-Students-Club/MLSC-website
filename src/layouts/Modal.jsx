@@ -21,7 +21,7 @@ const Modal = ({ event, onRequestClose }) => {
     return (
         <div className={styles.modal_backdrop}>
             <div className={styles.modal_container}>
-                <h3 className={styles.modal_title}>{event.title}</h3>
+                <h3 className={styles.modal_title}></h3>
                 <img className={styles.modal_img} src={event.imgSrc} alt={event.title} />
                 <div className={styles.modal_info_container}>
                     {event.info.map((info, index) => (
