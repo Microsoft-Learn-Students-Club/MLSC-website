@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Modal from "../layouts/Modal";
 import workshopEventImg from "../assets/reactjsworkshop.jpeg";
-import azureEventImg from "../assets/azurechallenge.jpeg";
 import styles from './Events.module.css';
 import SqlWorkshop from "../assets/SqlWorkshop.jpg";
 import scogoTuring from "../assets/Scogo_Turing.jpg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Events = ({count}) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const cardsRef = useRef([]);
 
   const toggleModal = (event) => {
     setSelectedEvent(event);
@@ -58,7 +63,7 @@ const Events = ({count}) => {
       Speaker: "Club leads",
       imgSrc: "https://i.imgur.com/S84VLt8.jpeg",
       description: ` A hands-on workshop where students gained practical experience with Git commands, version control, and collaborative workflows.
-They learned how to efficiently manage code repositories, track changes, and resolve merge conflicts in real-world projects.`,
+      They learned how to efficiently manage code repositories, track changes, and resolve merge conflicts in real-world projects.`,
       info: [
         { label: "Organizing People", value: 8 },
         { label: "Participants", value: 171 },

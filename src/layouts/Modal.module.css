@@ -13,7 +13,11 @@
 }
 
 .modal_container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to right,
+   rgba(255, 255, 255, 0.85),
+   rgba(200, 220, 255, 0.8),
+   rgba(140, 180, 255, 0.85)
+    );
     backdrop-filter: blur(5px);
     border-radius: 10px;
     width: 50%;
@@ -32,9 +36,13 @@
 }
 
 .modal_content {
-    margin-top: 0.5rem;
+ margin-top: 0.5rem;
     margin-bottom: 1rem;
     text-align: justify;
+    background: linear-gradient(90deg,#111827,#1F2937,#2E3A4F,#3B82F6, #4F46E5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .modal_img {

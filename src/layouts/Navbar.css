@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   padding: 12px 20px;
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }

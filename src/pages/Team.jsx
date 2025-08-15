@@ -2,6 +2,8 @@ import Card from "../components/Card";
 import "../pages/Team.css";
 import teamData from "../utils/data.json";
 import { useState } from "react";
+import ShinyText from "../blocks/TextAnimations/ShinyText/ShinyText";
+import TextType from '../blocks/TextAnimations/TextType/TextType';
 
 const Team = () => {
   const [selectedSection, setSelectedSection] = useState(null);
@@ -33,8 +35,8 @@ const Team = () => {
             style={{ marginLeft: "1em" }}
           >
             •{" "}
-            <span className={selectedSection === "App" ? "underline" : ""}>
-              App
+            <span className={selectedSection === "App" ? "underline font-bold" : "font-semibold"}>
+            <ShinyText text="App" disabled={false} speed={3} className='custom-class' />
             </span>
           </p>
 
@@ -48,8 +50,8 @@ const Team = () => {
             style={{ marginLeft: "1em" }}
           >
             •{" "}
-            <span className={selectedSection === "ML" ? "underline" : ""}>
-              ML
+            <span className={selectedSection === "ML" ? "underline font-bold" : "font-semibold"}>
+              <ShinyText text="ML" disabled={false} speed={3} className='custom-class' />
             </span>
           </p>
 
@@ -63,8 +65,8 @@ const Team = () => {
             style={{ marginLeft: "1em" }}
           >
             •{" "}
-            <span className={selectedSection === "Web" ? "underline" : ""}>
-              Web
+            <span className={selectedSection === "Web" ? "underline font-bold" : "font-semibold"}>
+            <ShinyText text="Web" disabled={false} speed={3} className='custom-class' />
             </span>
           </p>
         </div>
@@ -105,9 +107,11 @@ const Team = () => {
           <h1 className="font-extrabold text-yellow uppercase lg:text-2xl md:text-3xl text-4xl">
             Meet The Team
           </h1>
-          <p className="mt-4 font-light">
-          We have got a strong team filled with caffeine-addicted corporate members, gradients-loving outreach team, and machine-like working developers.
-          </p>
+          
+          <TextType text="We have got a strong team filled with caffeine-addicted corporate members, gradients-loving outreach team, and machine-like working developers." 
+           typingSpeed={75} pauseDuration={1500} showCursor={true} cursorCharacter="|"
+          />
+          
           <div className="flex flex-col gap-2 mt-8 w-fit">
             <div
               className={`w-fit pointer-events-auto ${
@@ -172,7 +176,7 @@ const Team = () => {
               {renderCards("lead")}
               <div
                 id="Corporate"
-                className="sm:flex flex lg:py-0 sm:py-10 py-4"
+                className="sm:flex flex lg:py-0 sm:py-10 py-4 pt-3"
               >
                 <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   Corporate
