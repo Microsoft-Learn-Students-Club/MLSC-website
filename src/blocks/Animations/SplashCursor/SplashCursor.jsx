@@ -14,8 +14,8 @@ function SplashCursor({
   PRESSURE = 0.1,
   PRESSURE_ITERATIONS = 20,
   CURL = 3,
-  SPLAT_RADIUS = 0.2,
-  SPLAT_FORCE = 6000,
+  SPLAT_RADIUS = 0.1,
+  SPLAT_FORCE = 3000,
   SHADING = true,
   COLOR_UPDATE_SPEED = 10,
   BACK_COLOR = { r: 0.5, g: 0, b: 0 },
@@ -936,9 +936,6 @@ function SplashCursor({
 
     function clickSplat(pointer) {
       const color = generateColor();
-      color.r *= 0.0;
-      color.g *= 0.0;
-      color.b *= 10.0;
       let dx = 10 * (Math.random() - 0.5);
       let dy = 30 * (Math.random() - 0.5);
       splat(pointer.texcoordX, pointer.texcoordY, dx, dy, color);
@@ -1013,11 +1010,11 @@ function SplashCursor({
     }
 
     function generateColor() {
-      let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-      c.r *= 0.15;
-      c.g *= 0.15;
-      c.b *= 0.15;
-      return c;
+      const t = Math.random();
+      const r = (1 - t) * 0.8; // slightly dim for pastel
+      const g = (1 - t) * 0.9;
+      const b = 1;
+      return { r, g, b };
     }
 
     function HSVtoRGB(h, s, v) {

@@ -1,11 +1,14 @@
 import aboutImg from '../assets/about.jpg';
 import styles from './About.module.css';
 import ScrambledText from '../blocks/TextAnimations/ScrambledText/ScrambledText';
+import TextType from '../blocks/TextAnimations/TextType/TextType';
 
 const About = () => {
   return (
     <section className={`section | ${styles.about_section}`}>
-      <h1 className={`title | ${styles.about_title}`}>A Hub of Tech Excellence and Collaboration</h1>
+      <h1 className={`title | ${styles.about_title}`}>
+        <TextType text="A Hub of Tech Excellence and Collaboration" />
+      </h1>
       <br />
       <div className={`flex_center | ${styles.about_content_container}`}>
         <ScrambledText className='md:text-sm text-xl font-bold m-2'
