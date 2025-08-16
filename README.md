@@ -1,9 +1,3 @@
-Absolutely! I'll update your README to specifically highlight the **custom modifications** you've recently added to the repository — like GSAP > Framer Motion switch in some places, futuristic UIs, UI glow effects, animated text, ScrollStack integration, 3D styling, etc.
-
----
-
-### ✅ Updated README HIGHLIGHTING Your Custom Enhancements
-
 ```markdown
 # MLSC VCET Website — Official Documentation
 
