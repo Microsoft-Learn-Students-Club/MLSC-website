@@ -13,7 +13,11 @@
 }
 
 .modal_container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to right,
+   rgba(255, 255, 255, 0.85),
+   rgba(200, 220, 255, 0.8),
+   rgba(140, 180, 255, 0.85)
+    );
     backdrop-filter: blur(5px);
     border-radius: 10px;
     width: 50%;
@@ -32,9 +36,13 @@
 }
 
 .modal_content {
-    margin-top: 0.5rem;
+ margin-top: 0.5rem;
     margin-bottom: 1rem;
     text-align: justify;
+    background: linear-gradient(90deg,#111827,#1F2937,#2E3A4F,#3B82F6, #4F46E5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .modal_img {
@@ -66,16 +74,33 @@
     width: 100%;
 }
 
-.event_info>span {
+.event_info > span {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(233, 216, 253);
+    background: linear-gradient(135deg, #3f5efb, #00bcd4); /* better gradient than plain cyan */
+    color: white;
     border-radius: 10px;
-}
+    padding: 8px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event_info > span:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    animation: bounce 0.4s ease-out;
+  }
+
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(-6px); }
+  }
 
 .event_info span>p {
-    color: rgb(68, 51, 122);
+    color: rgb(6, 6, 6);
     text-align: center;
     padding: 0 1em;
     font-size: small;

@@ -8,7 +8,7 @@
   "aiMl": [
     { "name": "Feedback", "imgSrc": "https://i.imgur.com/REzAgtv.jpeg", "category": "Built and deployed an AI chatbot to answer participant queries on the MLSC website." },
     { "name": "Aspiring celebrationss", "imgSrc": "https://i.imgur.com/sCgDtum.jpeg", "category": "1.  Developed and deployed an enterprise-level OCR solution for Merchant Navy documents using microservices and Docker on a Linux server." },
-    { "name": "AI Chatbot", "imgSrc": "/images/dataanalysis.jpg", "category": "Devloped an AI Chatbot to solve the FAQs and Questions of the Hackathon Participants" }
+    { "name": "AI Chatbot", "imgSrc": "https://tse1.mm.bing.net/th/id/OIP.V4rykO_TtuKs58vpUPwv8wHaEA?pid=Api&P=0&h=180", "category": "Devloped an AI Chatbot to solve the FAQs and Questions of the Hackathon Participants" }
   ],
   "app": [
     { "name": "Grow educators APP", "imgSrc": "https://i.imgur.com/C1j66K8.png", "category": "Created a App for a coaching classes which digitalized their platform" },

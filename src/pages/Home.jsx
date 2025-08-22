@@ -6,6 +6,7 @@ import About from './About'
 // import Gallery from '../layouts/Gallery'
 import CounterUp from '../components/CounterUp'
 // import { SliderData } from '../utils/data'
+import TextType from '../blocks/TextAnimations/TextType/TextType';
 
 const Home = () => {
 
@@ -31,7 +32,9 @@ const Home = () => {
         <div className={styles.home_content}>
           <div className={styles.hero_title}>
             <h1>MLSC <span>VCET</span></h1>
-            <p>for the love of coding and innovation</p>
+            <TextType className='font-bold text-2xl' text={["for the love of coding and innovation", "Learn, Build, Excel with Microsoft Learn Student Club",
+              "Code. Collaborate. Create. Together with MLSC", "From Curiosity to Capability – Start Your Tech Journey Here" 
+            ]} typingSpeed={85} pauseDuration={1000} showCursor={true} cursorCharacter="|"/>
           </div>
         </div>
       </div>
