@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "mlsc-vcet"
-  }
+    "default": "mlsc-vcet-official"
+  },
+  "targets": {},
+  "etags": {}
 }
