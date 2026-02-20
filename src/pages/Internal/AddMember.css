@@ -1,0 +1,130 @@
+/* Background */
+.add-member-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #1e3a8a);
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Glass Card */
+.add-member-card {
+  width: 50%;
+  max-width: 800px;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 28px;
+  padding: 50px;
+  color: #0f172a;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.add-member-card h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #edf2fb;
+}
+
+.add-member-card p {
+  text-align: center;
+  font-size: 18px;
+  color: #a5c6f4;
+  margin-bottom: 40px;
+}
+
+/* Form */
+.add-member-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 18px;
+}
+
+/* Row */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row select {
+  width: 30%;
+}
+
+.row input {
+  width: 70%;
+}
+
+/* Inputs & Selects */
+.add-member-form input,
+.add-member-form select {
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  background: rgba(255, 255, 255, 0.8);
+  color: #0f172a;
+  font-size: 17px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Fix dropdown visibility */
+.add-member-form select option {
+  color: #0f172a;
+  background: white;
+}
+
+.add-member-form input::placeholder {
+  color: #64748b;
+}
+
+.add-member-form input:focus,
+.add-member-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  background: white;
+}
+
+/* File input */
+.add-member-form input[type="file"] {
+  cursor: pointer;
+  border-style: dashed;
+}
+
+/* Button */
+.add-member-form button {
+  padding: 16px;
+  border-radius: 22px;
+  border: none;
+  background: #0f2f75;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-member-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .add-member-card {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row select,
+  .row input {
+    width: 100%;
+  }
+}
