@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./AddMember.css";
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const teamRoles = {
   "CORE LEADS": ["Club Lead", "Associate Club Lead", "Treasurer", "Deputy Treasurer"],
@@ -37,19 +39,56 @@ function AddMember() {
     }
   };
 
+  const [loading, setLoading] = useState(false);
+  const [serverStatus, setServerStatus] = useState("checking"); // "checking" | "online" | "offline"
+
+  useEffect(() => {
+    let cancelled = false;
+    const checkServer = async () => {
+      try {
+        const res = await fetch(`${API_URL}/health`);
+        if (!cancelled && res.ok) setServerStatus("online");
+      } catch {
+        if (!cancelled) setServerStatus("offline");
+      }
+    };
+    checkServer();
+    // retry every 5s if offline
+    const interval = setInterval(() => {
+      if (serverStatus !== "online") checkServer();
+    }, 5000);
+    return () => { cancelled = true; clearInterval(interval); };
+  }, [serverStatus]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = new FormData();
-    Object.keys(formData).forEach((key) => {
-      data.append(key, formData[key]);
-    });
+    setLoading(true);
 
-    await fetch("http://localhost:5000/add-member", {
-      method: "POST",
-      body: data,
-    });
+    try {
+      const data = new FormData();
+      Object.keys(formData).forEach((key) => {
+        data.append(key, formData[key]);
+      });
 
-    alert("Member added successfully 🚀");
+      const res = await fetch(`${API_URL}/add-member`, {
+        method: "POST",
+        body: data,
+      });
+
+      const result = await res.json();
+
+      if (!res.ok) {
+        alert("Error: " + result.error);
+        return;
+      }
+
+      alert("Member added successfully!");
+      setFormData({ title: "Mr", name: "", team: "", role: "", linkedinUrl: "", githubUrl: "", image: null });
+    } catch (err) {
+      alert("Failed to connect to server. Make sure the backend is running.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -57,6 +96,13 @@ function AddMember() {
       <div className="add-member-card">
         <h1 >Add your details</h1>
         <p className="info">Enter details carefully. This goes live.</p>
+
+        <div className={`server-status ${serverStatus}`}>
+          <span className="status-dot" />
+          {serverStatus === "checking" && "Connecting to server..."}
+          {serverStatus === "online" && "Server is online"}
+          {serverStatus === "offline" && "Server is waking up... please wait"}
+        </div>
 
         <form onSubmit={handleSubmit} className="add-member-form">
           <div className="row">
@@ -113,7 +159,9 @@ function AddMember() {
 
           <input type="file" name="image" accept="image/*" required onChange={handleChange} />
 
-          <button type="submit">Add Member</button>
+          <button type="submit" disabled={loading || serverStatus !== "online"}>
+            {loading ? "Adding..." : serverStatus !== "online" ? "Waiting for server..." : "Add Member"}
+          </button>
         </form>
       </div>
     </div>
