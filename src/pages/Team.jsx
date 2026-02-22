@@ -1,7 +1,20 @@
 import Card from "../components/Card";
 import "../pages/Team.css";
 import teamData from "../utils/data.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const SidebarLink = ({ sectionId, label, activeColor, selectedSection, onClick }) => (
+  <div
+    className={`w-fit pointer-events-auto cursor-pointer text-lg lg:text-xl transition-colors duration-200 ${
+      selectedSection === sectionId
+        ? `underline ${activeColor}`
+        : `text-grey hover:${activeColor}`
+    }`}
+    onClick={() => onClick(sectionId)}
+  >
+    {label}
+  </div>
+);
 
 const Team = () => {
   const [selectedSection, setSelectedSection] = useState(null);
@@ -13,60 +26,69 @@ const Team = () => {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    const navbar = document.getElementById("navbar");
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const navbarHeight = navbar ? navbar.offsetHeight : 80;
+      const top = section.getBoundingClientRect().top + window.scrollY - navbarHeight - 3;
+      window.scrollTo({ top, behavior: "smooth" });
       setSelectedSection(sectionId);
     }
   };
+
+  useEffect(() => {
+    const sections = ["Leads", "Corporate", "App", "ML", "Web", "Outreach"];
+
+    const handleScroll = () => {
+      const navbar = document.getElementById("navbar");
+      const navbarHeight = navbar ? navbar.offsetHeight : 80;
+
+      let current = null;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section) {
+          const top = section.getBoundingClientRect().top;
+          if (top <= navbarHeight + 20) {
+            current = sections[i];
+            break;
+          }
+        }
+      }
+
+      if (current) {
+        setSelectedSection(current);
+        if (["App", "ML", "Web"].includes(current)) {
+          setShowAppDropdown(true);
+        } else {
+          setShowAppDropdown(false); // close dropdown when outside Dev sections
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const renderDropdownOptions = () => {
     if (showAppDropdown) {
       return (
         <div className="dropdown-options">
-          <p
-            className={`w-fit pointer-events-auto dropdownoption dropdown-heading ${
-              selectedSection === "App"
-                ? "text-pastel_red"
-                : "text-grey hover:text-pastel_red"
-            } cursor-pointer text-lg lg:text-xl`}
-            onClick={() => scrollToSection("App")}
-            style={{ marginLeft: "1em" }}
-          >
-            •{" "}
-            <span className={selectedSection === "App" ? "underline" : ""}>
-              App
-            </span>
-          </p>
-
-          <p
-            className={`w-fit pointer-events-auto dropdown-option ${
-              selectedSection === "ML"
-                ? "text-pastel_blue"
-                : "text-grey hover:text-pastel_blue"
-            } cursor-pointer text-lg lg:text-xl`}
-            onClick={() => scrollToSection("ML")}
-            style={{ marginLeft: "1em" }}
-          >
-            •{" "}
-            <span className={selectedSection === "ML" ? "underline" : ""}>
-              ML
-            </span>
-          </p>
-
-          <p
-            className={`w-fit pointer-events-auto dropdown-option ${
-              selectedSection === "Web"
-                ? "text-yellow"
-                : "text-grey hover:text-yellow"
-            } cursor-pointer text-lg lg:text-xl`}
-            onClick={() => scrollToSection("Web")}
-            style={{ marginLeft: "1em" }}
-          >
-            •{" "}
-            <span className={selectedSection === "Web" ? "underline" : ""}>
-              Web
-            </span>
-          </p>
+          {[
+            { id: "App", color: "text-pastel_red hover:text-pastel_red" },
+            { id: "ML", color: "text-pastel_blue hover:text-pastel_blue" },
+            { id: "Web", color: "text-yellow hover:text-yellow" },
+          ].map(({ id, color }) => (
+            <p
+              key={id}
+              className={`w-fit pointer-events-auto cursor-pointer text-lg lg:text-xl ${
+                selectedSection === id ? `${color} underline` : `text-grey ${color}`
+              }`}
+              onClick={() => scrollToSection(id)}
+              style={{ marginLeft: "1em" }}
+            >
+              •{" "}
+              <span className={selectedSection === id ? "underline" : ""}>{id}</span>
+            </p>
+          ))}
         </div>
       );
     }
@@ -88,131 +110,86 @@ const Team = () => {
     );
   };
 
+  // Each section config — makes it easy to add/remove sections
+  const sections = [
+    { id: "Leads",     label: "Leads",     color: "text-yellow",      dataKey: "lead"     },
+    { id: "Corporate", label: "Corporate", color: "text-pastel_green", dataKey: "corporate" },
+    { id: "App",       label: "App",       color: "text-pastel_red",   dataKey: "App"       },
+    { id: "ML",        label: "ML",        color: "text-pastel_blue",  dataKey: "ML"        },
+    { id: "Web",       label: "Web",       color: "text-yellow",       dataKey: "Dev"       },
+    { id: "Outreach",  label: "Outreach",  color: "text-pastel_green", dataKey: "Outreach"  },
+  ];
+
   return (
     <div className="team-section">
-      <div> 
+      <div>
+        <h1
+          className="text-center font-extrabold text-yellow uppercase lg:text-2xl md:text-3xl text-4xl"
+          style={{ paddingTop: "2em" }}
+        >
+          Meet The Team
+        </h1>
+        <p className="text-center mt-4 font-light">
+          We have got a strong team filled with caffeine-addicted corporate members,
+          gradients-loving outreach team, and machine-like working developers.
+        </p>
+
+        {/* Sidebar */}
         <div
           id="team-div"
           style={{
             left: "50px",
-            top: "18%",
+            top: "35%",
             opacity: 1,
             transform: "scale(1) translateZ(0)",
             animation: "drop-in 1s ease 200ms backwards",
           }}
           className="lg:block hidden fixed pointer-events-none w-7/12 text-white xl:w-4/12 lg:w-4/12 md:w-3/12 pr-2"
         >
-          <h1 className="font-extrabold text-yellow uppercase lg:text-2xl md:text-3xl text-4xl">
-            Meet The Team
-          </h1>
-          <p className="mt-4 font-light">
-          We have got a strong team filled with caffeine-addicted corporate members, gradients-loving outreach team, and machine-like working developers.
-          </p>
           <div className="flex flex-col gap-2 mt-8 w-fit">
-            <div
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "LEADS"
-                  ? "underline text-yellow"
-                  : "text-grey hover:text-yellow"
-              } cursor-pointer text-lg lg:text-xl`}
-              onClick={() => scrollToSection("LEADS")}
-            >
-              LEADS
-            </div>
-            <p
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "Corporate"
-                  ? "underline text-pastel_green"
-                  : "text-grey hover:text-pastel_green"
-              } cursor-pointer text-lg lg:text-xl`}
-              onClick={() => scrollToSection("Corporate")}
-            >
-              Corporate
-            </p>
+            <SidebarLink sectionId="Leads"     label="Leads"     activeColor="text-yellow"       selectedSection={selectedSection} onClick={scrollToSection} />
+            <SidebarLink sectionId="Corporate" label="Corporate" activeColor="text-pastel_green"  selectedSection={selectedSection} onClick={scrollToSection} />
+
+            {/* Dev Dropdown */}
             <div className="relative inline-block">
               <div
-                className={`w-fit pointer-events-auto ${
-                  selectedSection === "App"
+                className={`w-fit pointer-events-auto cursor-pointer text-lg lg:text-xl transition-colors duration-200 ${
+                  ["App", "ML", "Web"].includes(selectedSection)
                     ? "underline text-pastel_red"
                     : "text-grey hover:text-pastel_red"
-                } cursor-pointer text-lg lg:text-xl`}
-                onClick={() => {
-                  toggleAppDropdown();
-                }}
+                }`}
+                onClick={toggleAppDropdown}
               >
                 Dev
               </div>
               {renderDropdownOptions()}
             </div>
-            <div
-              className={`w-fit pointer-events-auto ${
-                selectedSection === "Outreach"
-                  ? "underline text-pastel_green"
-                  : "text-grey hover:text-pastel_green"
-              } cursor-pointer text-lg lg:text-xl`}
-              onClick={() => scrollToSection("Outreach")}
-            >
-              Outreach
-            </div>
+
+            <SidebarLink sectionId="Outreach" label="Outreach" activeColor="text-pastel_green" selectedSection={selectedSection} onClick={scrollToSection} />
           </div>
         </div>
+
+        {/* Main Content */}
         <div className="xs:grid gap-16 mt-24 md:grid-cols-12 sm:grid">
-          <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3">
-            <div className="lg:hidden block sticky top-[150px] sm:text-base text-2xl"></div>
-          </div>
-          <div className="grid col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 sm:mt-0 z-50">
-          <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
-                  LEADS
-                </h2>
-            <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3">
-          
-              {/* <div id="LEADS" className="sm:flex flex lg:py-0 sm:py-10 py-4">
-               
-             </div> */}
-              {renderCards("lead")}
-              <div
-                id="Corporate"
-                className="sm:flex flex lg:py-0 sm:py-10 py-4"
-              >
-                <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
-                  Corporate
-                </h2>
+          <div className="col-span-8 pt-24 text-white xl:col-span-4 lg:col-span-4 md:col-span-3" />
+
+          <div className="flex flex-col col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 sm:mt-0 z-50 gap-12">
+            {sections.map(({ id, label, color, dataKey }) => (
+              <div key={id}>
+                {/* Title left-aligned beside cards */}
+                <div className="flex items-start gap-8">
+                  <h2
+                    id={id}
+                    className={`flex  font-extrabold ${color} uppercase lg:text-3xl sm:text-2xl text-3xl w-32 shrink-0 sticky top-24`}
+                  >
+                    {label}
+                  </h2>
+                  <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 flex-1">
+                    {renderCards(dataKey)}
+                  </div>
+                </div>
               </div>
-              {renderCards("corporate")}
-              <div></div>
-              <div id="App" className="sm:flex flex lg:py-0 sm:py-10 py-4">
-                <h2 className="font-extrabold text-pastel_red m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
-                  App
-                </h2>
-              </div>
-              {renderCards("App")}
-              <div></div>
-              <div></div>
-              <div id="ML" className="sm:flex flex lg:py-0 sm:py-10 py-4">
-                <h2 className="font-extrabold text-pastel_blue m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
-                  ML
-                </h2>
-              </div>
-              {renderCards("ML")}
-              <div></div>
-              <div id="Web" className="sm:flex flex lg:py-0 sm:py-10 py-4">
-                <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
-                  Web
-                </h2>
-              </div>
-              {renderCards("Dev")}
-              <div></div>
-          
-              <div
-                id="Outreach"
-                className="sm:flex flex lg:py-0 sm:py-10 py-4"
-              >
-                <h2 className="font-extrabold text-pastel_green m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
-                  Outreach
-                </h2>
-              </div>
-              {renderCards("Outreach")}
-            </div>
+            ))}
           </div>
         </div>
       </div>
