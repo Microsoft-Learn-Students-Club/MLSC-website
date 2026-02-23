@@ -1,8 +1,8 @@
 {
   "webDev": [
-    { "name": "MLSC VCET official website", "imgSrc": "https://i.imgur.com/pNA4KkM.jpeg", "category": "Hosted website for MLSC-VCET which showcased club activities" },
+    { "name": "MLSC VCET official website", "imgSrc": "https://i.imgur.com/pNA4KkM.jpeg", "category": "Hosted website for MLSC-VCET which showcased club activities", "websiteUrl": "https://mlsc-vcet-official.web.app/" },
     { "name": "Grow educators", "imgSrc": "https://i.imgur.com/C1j66K8.png", "category": "Created a website for a coaching classes which digitalized their platform" },
-    { "name": "Coherence Hackathon website", "imgSrc": "https://i.imgur.com/9kSpQwG.jpeg", "category": "Coherence, Hackathon conducted by MLSC created a website for the same" },
+    { "name": "Coherence Hackathon website", "imgSrc": "https://i.imgur.com/9kSpQwG.jpeg", "category": "Coherence, Hackathon conducted by MLSC created a website for the same", "websiteUrl": "https://mlsccoherence.web.app/" },
     { "name": "Aspiring celebrations", "imgSrc": "https://i.imgur.com/3AhWQXw.jpeg", "category": "Integrated Automated tally integration feature on their existing platform banquet easy" }
   ],
   "aiMl": [
