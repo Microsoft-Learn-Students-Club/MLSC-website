@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import Team from "../pages/Team";
 import Works from "../pages/Works";
-import ProjectDetails from "../pages/ProjectDetails";
+import ProjectDetail from "../pages/ProjectDetail";
 import AddMember from "../pages/Internal/AddMember";
 import ProtectedRoute from "../components/ProtectedRoute";
 
@@ -35,7 +35,7 @@ export const routes = [
   },
   {
     path: '/projects/:id',
-    element: <ProjectDetails />,
+    element: <ProjectDetail />,
   },
   {
     path: '/add-member',
