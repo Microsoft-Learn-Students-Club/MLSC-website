@@ -212,6 +212,56 @@ const Team = () => {
 
               if (!teamMembers.length) return null;
 
+              // Special handling for CORE LEADS
+              if (teamName === "CORE LEADS") {
+                const coreMembers = teamMembers.filter(
+                  (m) => m.role?.toLowerCase().trim() !== "deputy treasurer"
+                );
+
+                const deputyTreasurer = teamMembers.filter(
+                  (m) => m.role?.toLowerCase().trim() === "deputy treasurer"
+                );
+
+                return (
+                  <div key={teamName} id={teamName} className="mt-16">
+                    <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl ml-10 md:ml-2">
+                      {teamName}
+                    </h2>
+
+                    {/* Core Leads Grid */}
+                    <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 gap-8">
+                      {coreMembers.map((member) => (
+                        <Card
+                          key={member.id}
+                          name={member.name}
+                          imgSrc={member.imageUrl}
+                          githubUrl={member.githubUrl}
+                          linkedinUrl={member.linkedinUrl}
+                          role={member.role}
+                        />
+                      ))}
+                    </div>
+
+                    {/* Deputy Treasurer Row */}
+                    {deputyTreasurer.length > 0 && (
+                      <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+                        {deputyTreasurer.map((member) => (
+                          <Card
+                            key={member.id}
+                            name={member.name}
+                            imgSrc={member.imageUrl}
+                            githubUrl={member.githubUrl}
+                            linkedinUrl={member.linkedinUrl}
+                            role={member.role}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              // Normal rendering for other teams
               return (
                 <div key={teamName} id={teamName} className="mt-16">
                   <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl ml-10 md:ml-2">
