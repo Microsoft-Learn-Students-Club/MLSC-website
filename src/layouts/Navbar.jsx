@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <section>
-      <nav className={`${styles.navbar} ${color ? `${styles.navbar_bg}` : ""}`}>
+      <nav id='Navbar' className={`${styles.navbar} ${color ? `${styles.navbar_bg}` : ""}`}>
         <div className={`flex_center | ${styles.nav_wrapper}`}>
           <div className={`flex_center | ${styles.logo}`}>
             <img src={mlscLogo} className={styles.mlsc_logo}></img>
