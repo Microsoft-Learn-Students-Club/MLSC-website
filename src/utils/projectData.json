@@ -21,7 +21,7 @@
       "name": "Coherence Hackathon website",
       "imgSrc": "https://i.imgur.com/9kSpQwG.jpeg",
       "category": "Coherence, Hackathon conducted by MLSC created a website for the same",
-      "link": "https://coherencehackathon.com",
+      "link": "https://coherence-26.web.app/",
       "description": "Official website for Coherence Hackathon with registration, timeline, and participant management."
     },
     {
@@ -31,6 +31,14 @@
       "category": "Integrated Automated tally integration feature on their existing platform banquet easy",
       "link": "https://github.com/vedant2943/Tally_Banquet_Easy_Project",
       "description": "This project is designed to extract booking data from the Banquet Easy website and generate an XML file that can be imported directly into Tally Prime. The PHP script will allow you to pull booking information such as sales, receipts, and ledgers within a specified date range and create a well-structured XML file that can be imported into Tally Prime without requiring manual data entry. The goal of this project is to automate the process of transferring booking data into Tally Prime, improving efficiency and reducing human error."
+    },
+    {
+      "id": "novatra",
+      "name": "Novatra",
+      "imgSrc": "https://i.imgur.com/3AhWQXw.jpeg",
+      "category": "NovaTra 1.0, a business presentation competition, had a dedicated website with event details, round updates, leaderboards, and FAQs",
+      "link": "https://novatra-2025.web.app/",
+      "description": "Official website for: NovaTra 1.0, a business presentation competition aimed at inspiring creativity, innovation, and entrepreneurial spirit among engineering students. Through engaging rounds of bidding, pitching, and networking, participants presented their product ideas and problem-solving skills to peers, mentors, and judges."
     }
   ],
   "aiMl": [
