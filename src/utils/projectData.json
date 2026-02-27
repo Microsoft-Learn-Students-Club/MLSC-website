@@ -6,7 +6,7 @@
       "imgSrc": "https://i.imgur.com/pNA4KkM.jpeg",
       "category": "Hosted website for MLSC-VCET which showcased club activities",
       "link": "https://mlsc-vcet-official.web.app",
-      "description": "A comprehensive platform showcasing MLSC-VCET's activities, events, and achievements. Built with React and modern web technologies."
+      "description": "Welcome to the official documentation for the MLSC VCET Website, the dynamic and immersive website created by the Web Team! where you can Immerse yourself in seminars, hackathons, and interactive workshops where we showcase our projects, engage in vibrant discussions, and unleash our tech potential."
     },
     {
       "id": "grow-educators",
@@ -14,14 +14,14 @@
       "imgSrc": "https://i.imgur.com/C1j66K8.png",
       "category": "Created a website for a coaching classes which digitalized their platform",
       "link": "https://groweducators.com",
-      "description": "Digitalized platform for coaching classes with course management and student tracking."
+      "description": "Grow Educators is a comprehensive educational platform designed to empower both students and educators alike. With a wide range of courses spanning various subjects, Grow Educators provides interactive learning experiences tailored to individual needs. This platform fosters collaboration, creativity, and critical thinking, enabling students to thrive academically and educators to excel in their teaching endeavors"
     },
     {
       "id": "coherence-hackathon",
       "name": "Coherence Hackathon website",
       "imgSrc": "https://i.imgur.com/9kSpQwG.jpeg",
       "category": "Coherence, Hackathon conducted by MLSC created a website for the same",
-      "link": "https://coherencehackathon.com",
+      "link": "https://coherence-26.web.app/",
       "description": "Official website for Coherence Hackathon with registration, timeline, and participant management."
     },
     {
@@ -29,8 +29,16 @@
       "name": "Aspiring celebrations",
       "imgSrc": "https://i.imgur.com/3AhWQXw.jpeg",
       "category": "Integrated Automated tally integration feature on their existing platform banquet easy",
-      "link": "https://aspiringcelebrations.com",
-      "description": "Event management platform with automated tally integration for seamless banquet operations."
+      "link": "https://github.com/vedant2943/Tally_Banquet_Easy_Project",
+      "description": "This project is designed to extract booking data from the Banquet Easy website and generate an XML file that can be imported directly into Tally Prime. The PHP script will allow you to pull booking information such as sales, receipts, and ledgers within a specified date range and create a well-structured XML file that can be imported into Tally Prime without requiring manual data entry. The goal of this project is to automate the process of transferring booking data into Tally Prime, improving efficiency and reducing human error."
+    },
+    {
+      "id": "novatra",
+      "name": "Novatra",
+      "imgSrc": "https://i.imgur.com/3AhWQXw.jpeg",
+      "category": "NovaTra 1.0, a business presentation competition, had a dedicated website with event details, round updates, leaderboards, and FAQs",
+      "link": "https://novatra-2025.web.app/",
+      "description": "Official website for: NovaTra 1.0, a business presentation competition aimed at inspiring creativity, innovation, and entrepreneurial spirit among engineering students. Through engaging rounds of bidding, pitching, and networking, participants presented their product ideas and problem-solving skills to peers, mentors, and judges."
     }
   ],
   "aiMl": [
@@ -39,7 +47,7 @@
       "name": "Feedback",
       "imgSrc": "https://i.imgur.com/REzAgtv.jpeg",
       "category": "Built and deployed an AI chatbot to answer participant queries on the MLSC website.",
-      "link": "#",
+      "link": "https://github.com/Microsoft-Learn-Students-Club/feedback_system",
       "description": "AI-powered chatbot integrated into MLSC website to provide instant support to participants."
     },
     {
@@ -47,8 +55,8 @@
       "name": "Aspiring celebrationss",
       "imgSrc": "https://i.imgur.com/sCgDtum.jpeg",
       "category": "Developed and deployed an enterprise-level OCR solution for Merchant Navy documents using microservices and Docker on a Linux server.",
-      "link": "#",
-      "description": "Enterprise OCR solution with microservices architecture for document processing."
+      "link": "https://github.com/Microsoft-Learn-Students-Club/Secure-OCR-Based-REST-API-Deployment-using-FastAPI-Docker-NGINX",
+      "description": "This project demonstrates a production-ready deployment pipeline for a secure OCR-based REST API built with FastAPI, containerized with Docker, and deployed on a remote Ubuntu Linux server behind an NGINX reverse proxy with SSL (HTTPS) encryption. The system enables users to upload PDFs or image files and automatically extract structured codes or text using Optical Character Recognition (OCR). It was designed for enterprise-grade reliability, security, and maintainability."
     },
     {
       "id": "ai-chatbot",
@@ -73,8 +81,8 @@
       "name": "Aspiring celebrations APP",
       "imgSrc": "https://i.imgur.com/IkrhN0n.jpeg",
       "category": "Developed an Property Managment System App for their exsisting software",
-      "link": "#",
-      "description": "Property management system app for Aspiring Celebrations."
+      "link": "https://play.google.com/store/apps/details?id=com.pmseasy.app&pcampaignid=web_share",
+      "description": "PMSEASY is here to make hotel management effortless! From quick room bookings and real-time availability checks to channel integration and fast-track reservations, everything you need is now in one powerful app."
     }
   ]
 }
