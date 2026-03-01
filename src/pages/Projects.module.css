@@ -14,30 +14,31 @@ body {
 }
 
 .projects_section {
-    padding: 1em;
+    padding: clamp(1rem, 2.5vw, 2.5rem);
     background-color: rgb(12, 7, 81);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    width: 100%;
 }
 
 .title {
     text-align: center;
     color: #fff;
-    padding: 2.5em 0 1.5em;
+    padding: clamp(1.2rem, 4vw, 2.5rem) 0 clamp(0.8rem, 2vw, 1.5rem);
     font-weight: 600;
-    font-size: 50px;
+    font-size: clamp(1.8rem, 5vw, 3.125rem);
     animation: drop-in 1s ease 200ms backwards;
 }
 
 .projectCategorySection {
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: clamp(2rem, 6vw, 5rem);
 }
 
 .categoryTitle {
-    margin-bottom: 1.5em;
+    margin-bottom: clamp(0.9rem, 2vw, 1.5rem);
     font-weight: 600;
-    font-size: 28px;
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
     color: #02a2ff;
 }
 
@@ -49,8 +50,11 @@ body {
 
 .projectGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    gap: clamp(0.9rem, 2.5vw, 1.5rem);
+    align-items: stretch;
+    justify-content: center;
+    grid-auto-rows: 1fr;
 }
 
 .projectTile {
@@ -59,11 +63,13 @@ body {
     backdrop-filter: blur(5.5px);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 15px;
+    padding: clamp(0.8rem, 2vw, 1rem);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: clamp(0.5rem, 1.5vw, 0.8rem);
+    height: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -78,13 +84,25 @@ body {
 
 .projectImg {
     width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
     border-radius: 15px;
 }
 
 .projectName,
 .projectCategory {
-    margin-top: 10px;
+    margin-top: 0;
     color: #ffffff;
+}
+
+.projectName {
+    font-size: clamp(1rem, 2.4vw, 1.2rem);
+    font-weight: 600;
+}
+
+.projectCategory {
+    font-size: clamp(0.86rem, 2vw, 1rem);
+    line-height: 1.45;
 }
 
 .infoMessage {
@@ -108,16 +126,37 @@ body {
     to { opacity: 1; transform: translate(0px); }
 }
 
+@media (max-width: 992px) {
+    .projectGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+    }
+}
+
 @media (max-width: 768px) {
     .title {
-        font-size: 40px;
+        font-size: clamp(1.6rem, 6vw, 2.25rem);
     }
 
     .categoryTitle {
-        font-size: 24px;
+        font-size: clamp(1.05rem, 4.5vw, 1.35rem);
+    }
+
+    .projectGrid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    }
+}
+
+@media (max-width: 520px) {
+    .projects_section {
+        padding: 1rem;
+        width: 100%;
     }
 
     .projectTile {
-        padding: 70px;
+        padding: 0.8rem;
+    }
+
+    .projectGrid {
+        grid-template-columns: 1fr;
     }
 }

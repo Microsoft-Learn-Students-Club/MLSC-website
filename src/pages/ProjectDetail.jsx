@@ -24,10 +24,9 @@ const ProjectDetail = () => {
 
   return (
     <div className={styles.project_detail}>
-      <button className={styles.back_btn} onClick={() => navigate('/projects')}>← Back</button>
-      
       <div className={styles.detail_container}>
         <div className={styles.image_section}>
+          <button className={styles.back_btn} onClick={() => navigate('/projects')}>← Back</button>
           <img src={project.imgSrc} alt={project.name} className={styles.detail_img} />
         </div>
 

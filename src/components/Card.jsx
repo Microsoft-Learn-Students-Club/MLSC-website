@@ -31,6 +31,9 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
               src={imgSrc}
               alt={name}
               className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
             />
           </div>
 

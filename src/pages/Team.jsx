@@ -3,39 +3,39 @@ import "../pages/Team.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+const TEAM_ORDER = [
+  "CORE LEADS",
+  "ADMIN TEAM",
+  "EXECUTIVE TEAM",
+  "CORPORATE TEAM",
+  "OUTREACH TEAM",
+  "WEB DEV TEAM",
+  "APP DEV TEAM",
+  "AIML TEAM"
+];
+
+const rolePriority = (role = "") => {
+  const normalizedRole = role.toLowerCase().trim();
+
+  if (normalizedRole === "club lead") return 1;
+  if (normalizedRole === "associate club lead") return 2;
+  if (normalizedRole === "treasurer") return 3;
+  if (normalizedRole === "deputy treasurer") return 4;
+
+  if (normalizedRole.endsWith("lead")) return 1;
+  if (normalizedRole.includes("senior")) return 2;
+  if (normalizedRole.includes("associate")) return 3;
+  if (normalizedRole.includes("coordinator")) return 4;
+
+  return 99;
+};
+
 const Team = () => {
   const [selectedSection, setSelectedSection] = useState(null);
   const [showDevDropdown, setShowDevDropdown] = useState(false);
   const [members, setMembers] = useState([]);
-
-  const API_URL = import.meta.env.VITE_API_URL;
-
-  const teamOrder = [
-    "CORE LEADS",
-    "ADMIN TEAM",
-    "EXECUTIVE TEAM",
-    "CORPORATE TEAM",
-    "OUTREACH TEAM",
-    "WEB DEV TEAM",
-    "APP DEV TEAM",
-    "AIML TEAM"
-  ];
-
-  const rolePriority = (role = "") => {
-    const r = role.toLowerCase().trim();
-
-    if (r === "club lead") return 1;
-    if (r === "associate club lead") return 2;
-    if (r === "treasurer") return 3;
-    if (r === "deputy treasurer") return 4;
-
-    if (r.endsWith("lead")) return 1;
-    if (r.includes("senior")) return 2;
-    if (r.includes("associate")) return 3;
-    if (r.includes("coordinator")) return 4;
-
-    return 99;
-  };
 
   // Fetch + Sort
   useEffect(() => {
@@ -44,8 +44,8 @@ const Team = () => {
         const res = await axios.get(`${API_URL}/members`);
 
         const sorted = [...res.data].sort((a, b) => {
-          const teamA = teamOrder.indexOf(a.team?.trim());
-          const teamB = teamOrder.indexOf(b.team?.trim());
+          const teamA = TEAM_ORDER.indexOf(a.team?.trim());
+          const teamB = TEAM_ORDER.indexOf(b.team?.trim());
 
           if (teamA !== teamB) return teamA - teamB;
 
@@ -65,7 +65,7 @@ const Team = () => {
   useEffect(() => {
     if (!members.length) return;
 
-    const sections = teamOrder
+    const sections = TEAM_ORDER
       .map((team) => document.getElementById(team))
       .filter(Boolean);
 
@@ -205,7 +205,7 @@ const Team = () => {
               MLSC TEAM 25-26
             </h1>
 
-            {teamOrder.map((teamName) => {
+            {TEAM_ORDER.map((teamName) => {
               const teamMembers = members.filter(
                 (m) => m.team === teamName
               );
