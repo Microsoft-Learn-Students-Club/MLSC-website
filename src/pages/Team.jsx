@@ -2,6 +2,10 @@ import Card from "../components/Card";
 import "../pages/Team.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import {
+  applyMemberOverrides,
+  getMemberImagePosition
+} from "../utils/teamCorrections";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
@@ -43,7 +47,9 @@ const Team = () => {
       try {
         const res = await axios.get(`${API_URL}/members`);
 
-        const sorted = [...res.data].sort((a, b) => {
+        const normalizedMembers = res.data.map(applyMemberOverrides);
+
+        const sorted = [...normalizedMembers].sort((a, b) => {
           const teamA = TEAM_ORDER.indexOf(a.team?.trim());
           const teamB = TEAM_ORDER.indexOf(b.team?.trim());
 
@@ -105,6 +111,7 @@ const Team = () => {
           key={member.id}
           name={member.name}
           imgSrc={member.imageUrl}
+          imagePosition={getMemberImagePosition(member)}
           githubUrl={member.githubUrl}
           linkedinUrl={member.linkedinUrl}
           role={member.role}
@@ -211,55 +218,6 @@ const Team = () => {
               );
 
               if (!teamMembers.length) return null;
-
-              // Special handling for CORE LEADS
-              if (teamName === "CORE LEADS") {
-                const coreMembers = teamMembers.filter(
-                  (m) => m.role?.toLowerCase().trim() !== "deputy treasurer"
-                );
-
-                const deputyTreasurer = teamMembers.filter(
-                  (m) => m.role?.toLowerCase().trim() === "deputy treasurer"
-                );
-
-                return (
-                  <div key={teamName} id={teamName} className="mt-16">
-                    <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl ml-10 md:ml-2">
-                      {teamName}
-                    </h2>
-
-                    {/* Core Leads Grid */}
-                    <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 gap-8">
-                      {coreMembers.map((member) => (
-                        <Card
-                          key={member.id}
-                          name={member.name}
-                          imgSrc={member.imageUrl}
-                          githubUrl={member.githubUrl}
-                          linkedinUrl={member.linkedinUrl}
-                          role={member.role}
-                        />
-                      ))}
-                    </div>
-
-                    {/* Deputy Treasurer Row */}
-                    {deputyTreasurer.length > 0 && (
-                      <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
-                        {deputyTreasurer.map((member) => (
-                          <Card
-                            key={member.id}
-                            name={member.name}
-                            imgSrc={member.imageUrl}
-                            githubUrl={member.githubUrl}
-                            linkedinUrl={member.linkedinUrl}
-                            role={member.role}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              }
 
               // Normal rendering for other teams
               return (

@@ -1,4 +1,4 @@
-function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
+function Card({ name, imgSrc, githubUrl, linkedinUrl, role, imagePosition = "center" }) {
   return (
     <div className="m-2 lg:m-4">
       <div
@@ -17,7 +17,7 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
             inset: 0,
             backgroundImage: `url(${imgSrc})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: imagePosition,
             filter: "blur(20px)",
             transform: "scale(1.1)",
             zIndex: 0,
@@ -31,9 +31,9 @@ function Card({ name, imgSrc, githubUrl, linkedinUrl, role }) {
               src={imgSrc}
               alt={name}
               className="w-full h-full object-cover"
+              style={{ objectPosition: imagePosition }}
               loading="lazy"
               decoding="async"
-              fetchPriority="low"
             />
           </div>
 
