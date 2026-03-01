@@ -1,5 +1,5 @@
 .event_section {
-    padding: 0 5em;
+    padding: 0 clamp(1rem, 5vw, 5rem);
 }
 
 .event_container {
@@ -8,11 +8,12 @@
 
 .event_content {
     justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
     width: 100%;
-    padding: 1.5em;
-    margin: 2rem;
-    gap: 5rem;
+    padding: clamp(1rem, 2.4vw, 1.5rem);
+    margin: clamp(0.9rem, 2.6vw, 2rem) 0;
+    gap: clamp(1rem, 4vw, 5rem);
     background: rgba(124, 124, 155, 0.3); 
     box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.051);
     animation: slide-in 1200ms ease 500ms backwards;
@@ -22,27 +23,31 @@
 }
 
 .eventImg {
-    height: 20rem;
-    width: 20rem;
+    height: clamp(11rem, 26vw, 20rem);
+    width: clamp(11rem, 26vw, 20rem);
+    flex-shrink: 0;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .event_right_content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: clamp(0.9rem, 3vw, 3rem);
+    width: 100%;
 }
 
 .event_right_content>h2 {
-    text-align: center;
-    font-size: 35px;
+    text-align: left;
+    font-size: clamp(1.2rem, 3.2vw, 2.2rem);
     color: rgb(255, 255, 255);
 }
 
 .event_right_content>p {
     text-align: justify;
     font-weight: 500;
-    font-size: large;
+    font-size: clamp(0.9rem, 1.8vw, 1.12rem);
+    line-height: 1.65;
     color: white;
 }
 
@@ -50,12 +55,13 @@
     background-color: rgb(0, 0, 255);
     border: none;
     padding: 1em 1.5em;
-    margin: auto;
+    margin: 0;
     color: rgb(255, 255, 255);
     font-weight: 500;
     border-radius: 2rem;
-    font-size: 15px;
+    font-size: clamp(0.82rem, 1.6vw, 0.95rem);
     transition: background-color 0.3s ease-in-out;
+    width: fit-content;
 }
 
 .event_btn:hover {
@@ -81,35 +87,35 @@
 @media (max-width:1280px){
     .event_section{
         width: 100%;
-        padding: 0 2em;
+        padding: 0 clamp(1rem, 3vw, 2rem);
     }
 
     .event_content{
         width: 100%;
-        padding: 1em;
-        gap: 2rem;
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
     .eventImg{
-        height: 15rem;
-        width: 15rem;
+        height: clamp(10.5rem, 24vw, 15rem);
+        width: clamp(10.5rem, 24vw, 15rem);
     }
 
     .event_right_content h2{
-        font-size: 32px;
+        font-size: clamp(1.1rem, 2.8vw, 2rem);
     }
 
     .event_right_content p{
-        font-size: 17px;
+        font-size: clamp(0.88rem, 1.7vw, 1.06rem);
     }
 
     .event_right_content > .event_btn{
         padding: .8em 1em;
-        font-size: 14px;
+        font-size: clamp(0.8rem, 1.5vw, 0.9rem);
     }
 }
 
-@media (max-width:1050px){
+@media (max-width:960px){
     .event_section{
         width: 100%;
         padding: 0 1em;
@@ -118,34 +124,34 @@
     .event_content{
         width: 100%;
         display: flex;
-        padding: 1em 1.5em;
-        gap: 2rem;
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .eventImg{
-        height: 14rem;
-        width: 14rem;
+        height: clamp(10rem, 25vw, 14rem);
+        width: clamp(10rem, 25vw, 14rem);
     }
 
     .event_right_content{
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .event_right_content h2{
-        font-size: 18px;
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
     }
 
     .event_right_content p{
-        font-size: 14px;
+        font-size: clamp(0.85rem, 1.8vw, 0.95rem);
     }
 
     .event_right_content > .event_btn{
         padding: .8em 1em;
-        font-size: 13px;
+        font-size: clamp(0.78rem, 1.6vw, 0.86rem);
     }
 }
 
-@media (max-width:750px){
+@media (max-width:780px){
     .event_section{
         width: 100%;
         padding: 0 1em;
@@ -154,30 +160,35 @@
     .event_content{
         width: 100%;
         display: flex;
-        padding: 1em 1.5em;
-        gap: 2rem;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .eventImg{
-        height: 14rem;
-        width: 14rem;
+        height: clamp(11rem, 55vw, 16rem);
+        width: min(100%, 22rem);
+        margin: 0 auto;
     }
 
     .event_right_content{
-        gap: 1.5rem;
+        gap: .8rem;
     }
 
     .event_right_content h2{
-        font-size: 18px;
+        text-align: center;
+        font-size: clamp(1rem, 4.5vw, 1.35rem);
     }
 
     .event_right_content p{
-        font-size: 13px;
+        font-size: clamp(0.84rem, 3.2vw, 0.95rem);
     }
 
     .event_right_content > .event_btn{
         padding: .8em 1em;
-        font-size: 13px;
+        margin: 0 auto;
+        font-size: clamp(0.78rem, 3vw, 0.86rem);
     }
 }
 
@@ -192,30 +203,30 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 1.3em;
-        gap: 2rem;
-    }
-
-    .eventImg{
-        height: 14rem;
-        width: 14rem;
-    }
-
-    .event_right_content{
+        padding: 1rem;
         gap: 1rem;
     }
 
+    .eventImg{
+        height: clamp(10.5rem, 52vw, 14rem);
+        width: min(100%, 20rem);
+    }
+
+    .event_right_content{
+        gap: .8rem;
+    }
+
     .event_right_content h2{
-        font-size: 18px;
+        font-size: clamp(1rem, 5vw, 1.2rem);
     }
 
     .event_right_content p{
-        font-size: 14px;
+        font-size: clamp(0.84rem, 3.4vw, 0.92rem);
     }
 
     .event_right_content > .event_btn{
         padding: .8em 1em;
-        font-size: 13px;
+        font-size: clamp(0.76rem, 3.1vw, 0.84rem);
     }
 }
 
@@ -230,30 +241,30 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 1.3em;
-        gap: 2rem;
+        padding: .9rem;
+        gap: .9rem;
     }
 
     .eventImg{
-        height: 14rem;
-        width: 14rem;
+        height: clamp(9.5rem, 56vw, 12.5rem);
+        width: 100%;
     }
 
     .event_right_content{
-        gap: 1rem;
+        gap: .7rem;
     }
 
     .event_right_content h2{
-        font-size: 16px;
+        font-size: clamp(0.95rem, 5.5vw, 1.1rem);
     }
 
     .event_right_content p{
-        font-size: 13px;
+        font-size: clamp(0.82rem, 3.8vw, 0.9rem);
     }
 
     .event_right_content > .event_btn{
         padding: .8em 1em;
-        font-size: 13px;
+        font-size: clamp(0.74rem, 3.4vw, 0.82rem);
     }
 }
 
@@ -267,29 +278,29 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 1.8em;
-        gap: 2rem;
+        padding: .8rem;
+        gap: .8rem;
     }
 
     .eventImg{
-        height: 16rem;
-        width: 16rem;
+        height: clamp(8.8rem, 58vw, 11rem);
+        width: 100%;
     }
 
     .event_right_content{
-        gap: 1.5rem;
+        gap: .7rem;
     }
 
     .event_right_content h2{
-        font-size: 20px;
+        font-size: clamp(0.9rem, 6vw, 1rem);
     }
 
     .event_right_content p{
-        font-size: 15px;
+        font-size: clamp(0.8rem, 4.2vw, 0.86rem);
     }
 
     .event_right_content > .event_btn{
-        padding: .8em 1em;
-        font-size: 13px;
+        padding: .7em .9em;
+        font-size: clamp(0.72rem, 3.8vw, 0.8rem);
     }
 }

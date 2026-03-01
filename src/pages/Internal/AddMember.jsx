@@ -83,7 +83,15 @@ function AddMember() {
       }
 
       alert("Member added successfully!");
-      setFormData({ title: "Mr", name: "", team: "", role: "", linkedinUrl: "", githubUrl: "", image: null });
+      setFormData({
+        title: "Mr",
+        name: "",
+        team: "",
+        role: "",
+        linkedinUrl: "",
+        githubUrl: "",
+        image: null
+      });
     } catch (err) {
       alert("Failed to connect to server. Make sure the backend is running.");
     } finally {

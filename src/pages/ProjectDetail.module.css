@@ -5,9 +5,7 @@
 }
 
 .back_btn {
-  position: fixed;
-  top: 80px;
-  left: 20px;
+  position: static;
   padding: 0.5rem 0.9rem;
   background: rgba(2, 162, 255, 0.06);
   border: 1px solid rgba(2, 162, 255, 0.22);
@@ -16,11 +14,12 @@
   cursor: pointer;
   font-size: 14px;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
-  z-index: 60;
+  z-index: auto;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
   backdrop-filter: blur(4px);
+  align-self: flex-start;
 }
 
 .back_btn:hover {
@@ -31,8 +30,6 @@
 
 @media (max-width: 768px) {
   .back_btn {
-    top: 70px;
-    left: 12px;
     padding: 0.45rem 0.8rem;
     font-size: 13px;
   }
@@ -44,20 +41,28 @@
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
+  align-items: start;
 }
 
 .image_section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.85rem;
+  padding-top: 0.5rem;
 }
 
 .detail_img {
+  align-self: center;
+  display: block;
   width: 100%;
   max-width: 500px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 0 40px rgba(2, 162, 255, 0.3);
   border: 1px solid rgba(2, 162, 255, 0.2);
+  background: rgba(2, 162, 255, 0.08);
 }
 
 .info_section {
@@ -146,6 +151,11 @@
   .detail_container {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .image_section {
+    gap: 0.75rem;
+    padding-top: 0;
   }
 
   .project_title {

@@ -2,40 +2,44 @@ import Card from "../components/Card";
 import "../pages/Team.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import {
+  applyMemberOverrides,
+  getMemberImagePosition
+} from "../utils/teamCorrections";
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+const TEAM_ORDER = [
+  "CORE LEADS",
+  "ADMIN TEAM",
+  "EXECUTIVE TEAM",
+  "CORPORATE TEAM",
+  "OUTREACH TEAM",
+  "WEB DEV TEAM",
+  "APP DEV TEAM",
+  "AIML TEAM"
+];
+
+const rolePriority = (role = "") => {
+  const normalizedRole = role.toLowerCase().trim();
+
+  if (normalizedRole === "club lead") return 1;
+  if (normalizedRole === "associate club lead") return 2;
+  if (normalizedRole === "treasurer") return 3;
+  if (normalizedRole === "deputy treasurer") return 4;
+
+  if (normalizedRole.endsWith("lead")) return 1;
+  if (normalizedRole.includes("senior")) return 2;
+  if (normalizedRole.includes("associate")) return 3;
+  if (normalizedRole.includes("coordinator")) return 4;
+
+  return 99;
+};
 
 const Team = () => {
   const [selectedSection, setSelectedSection] = useState(null);
   const [showDevDropdown, setShowDevDropdown] = useState(false);
   const [members, setMembers] = useState([]);
-
-  const API_URL = import.meta.env.VITE_API_URL;
-
-  const teamOrder = [
-    "CORE LEADS",
-    "ADMIN TEAM",
-    "EXECUTIVE TEAM",
-    "CORPORATE TEAM",
-    "OUTREACH TEAM",
-    "WEB DEV TEAM",
-    "APP DEV TEAM",
-    "AIML TEAM"
-  ];
-
-  const rolePriority = (role = "") => {
-    const r = role.toLowerCase().trim();
-
-    if (r === "club lead") return 1;
-    if (r === "associate club lead") return 2;
-    if (r === "treasurer") return 3;
-    if (r === "deputy treasurer") return 4;
-
-    if (r.endsWith("lead")) return 1;
-    if (r.includes("senior")) return 2;
-    if (r.includes("associate")) return 3;
-    if (r.includes("coordinator")) return 4;
-
-    return 99;
-  };
 
   // Fetch + Sort
   useEffect(() => {
@@ -43,9 +47,11 @@ const Team = () => {
       try {
         const res = await axios.get(`${API_URL}/members`);
 
-        const sorted = [...res.data].sort((a, b) => {
-          const teamA = teamOrder.indexOf(a.team?.trim());
-          const teamB = teamOrder.indexOf(b.team?.trim());
+        const normalizedMembers = res.data.map(applyMemberOverrides);
+
+        const sorted = [...normalizedMembers].sort((a, b) => {
+          const teamA = TEAM_ORDER.indexOf(a.team?.trim());
+          const teamB = TEAM_ORDER.indexOf(b.team?.trim());
 
           if (teamA !== teamB) return teamA - teamB;
 
@@ -65,7 +71,7 @@ const Team = () => {
   useEffect(() => {
     if (!members.length) return;
 
-    const sections = teamOrder
+    const sections = TEAM_ORDER
       .map((team) => document.getElementById(team))
       .filter(Boolean);
 
@@ -105,6 +111,7 @@ const Team = () => {
           key={member.id}
           name={member.name}
           imgSrc={member.imageUrl}
+          imagePosition={getMemberImagePosition(member)}
           githubUrl={member.githubUrl}
           linkedinUrl={member.linkedinUrl}
           role={member.role}
@@ -205,61 +212,12 @@ const Team = () => {
               MLSC TEAM 25-26
             </h1>
 
-            {teamOrder.map((teamName) => {
+            {TEAM_ORDER.map((teamName) => {
               const teamMembers = members.filter(
                 (m) => m.team === teamName
               );
 
               if (!teamMembers.length) return null;
-
-              // Special handling for CORE LEADS
-              if (teamName === "CORE LEADS") {
-                const coreMembers = teamMembers.filter(
-                  (m) => m.role?.toLowerCase().trim() !== "deputy treasurer"
-                );
-
-                const deputyTreasurer = teamMembers.filter(
-                  (m) => m.role?.toLowerCase().trim() === "deputy treasurer"
-                );
-
-                return (
-                  <div key={teamName} id={teamName} className="mt-16">
-                    <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl ml-10 md:ml-2">
-                      {teamName}
-                    </h2>
-
-                    {/* Core Leads Grid */}
-                    <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 gap-8">
-                      {coreMembers.map((member) => (
-                        <Card
-                          key={member.id}
-                          name={member.name}
-                          imgSrc={member.imageUrl}
-                          githubUrl={member.githubUrl}
-                          linkedinUrl={member.linkedinUrl}
-                          role={member.role}
-                        />
-                      ))}
-                    </div>
-
-                    {/* Deputy Treasurer Row */}
-                    {deputyTreasurer.length > 0 && (
-                      <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
-                        {deputyTreasurer.map((member) => (
-                          <Card
-                            key={member.id}
-                            name={member.name}
-                            imgSrc={member.imageUrl}
-                            githubUrl={member.githubUrl}
-                            linkedinUrl={member.linkedinUrl}
-                            role={member.role}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              }
 
               // Normal rendering for other teams
               return (
